@@ -229,6 +229,15 @@ body.dark-mode .menu-social a {
 }
 
 @media (max-width: 768px) {
+    .dark-mode-toggle {
+        display: none;
+    }
+
+    .offcanvas-menu .dark-mode-toggle {
+        display: block;
+        margin-top: 20px;
+    }
+    
     .hamburger {
         display: flex;
         margin: auto;
