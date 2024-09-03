@@ -26,6 +26,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOM fully loaded');
+
+    const darkModeToggleNavbar = document.getElementById('darkModeToggleNavbar');
+    const darkModeToggleOffcanvas = document.getElementById('darkModeToggleOffcanvas');
+
+    console.log('Navbar toggle:', darkModeToggleNavbar);
+    console.log('Offcanvas toggle:', darkModeToggleOffcanvas);
+
+    function toggleDarkMode() {
+        console.log('Toggle function called');
+        document.body.classList.toggle('dark-mode');
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        console.log('Dark mode:', isDarkMode);
+    }
+
+    if (darkModeToggleNavbar) {
+        darkModeToggleNavbar.addEventListener('change', toggleDarkMode);
+    }
+
+    if (darkModeToggleOffcanvas) {
+        darkModeToggleOffcanvas.addEventListener('change', toggleDarkMode);
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const darkModeToggle = document.getElementById('darkModeToggle', 'darkModeToggle2');
