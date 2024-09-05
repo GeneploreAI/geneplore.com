@@ -205,11 +205,13 @@ body.dark-mode .plugin-list li {
 
 .model-card.premium {
     background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-    border: 2px solid #fda085;
+    border: 2px solid #6200ea;
     box-shadow: 0 8px 16px rgba(253, 160, 133, 0.3);
     transform: scale(1.05);
     z-index: 1;
 }
+
+
 
 .model-card.premium::before {
     content: "Premium";
@@ -241,6 +243,10 @@ body.dark-mode .plugin-list li {
 .model-card.premium:hover {
     transform: scale(1.1);
     box-shadow: 0 12px 24px rgba(253, 160, 133, 0.4);
+}
+
+.model-card.premium.highlight {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
 }
 
 @media (max-width: 768px) {

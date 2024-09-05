@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "geneplore-main",
+    "public": "site",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

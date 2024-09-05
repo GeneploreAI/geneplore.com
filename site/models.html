@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/site/css/models.css">
-        <link rel="stylesheet" href="/site/css/main.css">
+        <link rel="stylesheet" href="css/models.css">
+        <link rel="stylesheet" href="css/main.css">
         <title>Geneplore Models</title>
         <link rel="preconnect"
             href="https://fonts.googleapis.com">
@@ -21,7 +21,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
             rel="stylesheet">
-        <link rel="shortcut icon" href="/site/img/geneplore_color_logo_circular.png"
+        <link rel="shortcut icon" href="img/geneplore_color_logo_circular.png"
             type="image/x-icon">
         <style>
             @font-face {
@@ -101,16 +101,15 @@ font-style: normal
     <body oncontextmenu="return false">
         <header>
             <nav class="navbar">
-                <a href="/site/index.html" class="logo">
-                    <img src="/site/img/geneplore.png" alt="GENEPLORE AI Logo">
-                    <img src="/site/img/geneplore-mini.png" alt="geneplore-mini">
+                <a href="index.html" class="logo">
+                    <img src="img/geneplore.png" alt="Geneplore AI Logo">
+                    <img src="img/geneplore-mini.png" alt="geneplore-mini">
                 </a>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a
-                            href="https://discord.com/oauth2/authorize?client_id=1089317211652509811">Bot</a></li>
-                    <li><a href="https://geneplo.re/discord">Discord</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="https://geneplo.re/discord">Discord</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <span class="other">
@@ -134,27 +133,7 @@ font-style: normal
                             </svg>
                         </a>
                     </div>
-                    <div class="dark-mode-toggle">
-                        <label class="switch">
-                            <span class="visually-hidden">Dark Mode</span>
-                            <input type="checkbox" id="darkModeToggle">
-                            <span class="slider">
-                                <svg class="sun"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
-                                </svg>
-                                <svg class="moon"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24" fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </span>
-                        </label>
-                    </div>
+
                     <div class="hamburger">
                         <span></span>
                         <span></span>
@@ -166,15 +145,14 @@ font-style: normal
         <div class="offcanvas-menu">
             <div class="offcanvas-menu-header">
                 <div class="logo">
-                    <img src="/site/img/geneplore-mini.png" alt="GENEPLORE AI Logo">
+                    <img src="img/geneplore-mini.png" alt="Geneplore AI Logo">
                 </div>
                 <button class="close-menu" type="button">&times;</button>
             </div>
             <ul class="offcanvas-nav-links">
-                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a
-                        href="https://discord.com/oauth2/authorize?client_id=1089317211652509811">Bot</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="models.html">Models</a></li>
                 <li><a href="https://geneplo.re/discord">Discord</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -242,114 +220,9 @@ font-style: normal
             </div>
 
             <div class="models-grid">
-                <div id="sdxl-v1-0" class="model-card" data-category="image">
-                    <img class="model-image" src="/site/model-img/sdxl.png"
-                        alt="SDXL v1.0">
-                    <h3 class="model-name">SDXL v1.0</h3>
-                    <p class="model-description">Advanced image generation
-                        model</p>
-                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
-                        Now</a>
-                </div>
-                <div id="dall-e-2" class="model-card" data-category="image">
-                    <img class="model-image" src="/site/model-img/dall-e.png"
-                        alt="DALL-E 2">
-                    <h3 class="model-name">DALL-E 2</h3>
-                    <p class="model-description">OpenAI's image generation
-                        model</p>
-                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
-                        Now</a>
-                </div>
-                <div id="dall-e-3" class="model-card premium"
-                    data-category="image">
-                    <img class="model-image" src="/site/model-img/dall-e.png"
-                        alt="DALL-E 3">
-                    <h3 class="model-name">DALL-E 3</h3>
-                    <p class="model-description">Latest version of OpenAI's
-                        image model</p>
-                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
-                        Now</a>
-                </div>
-                <div id="imagen-3" class="model-card premium"
-                    data-category="image">
-                    <img class="model-image" src="/site/model-img/google.png"
-                        alt="Imagen 3">
-                    <h3 class="model-name">Imagen 3</h3>
-                    <p class="model-description">Google's advanced image
-                        generation</p>
-                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
-                        Now</a>
-                </div>
-                <div id="sd-ultra" class="model-card premium"
-                    data-category="image">
-                    <img class="model-image" src="/site/model-img/sdxl.png"
-                        alt="SD Ultra">
-                    <h3 class="model-name">SD Ultra</h3>
-                    <p class="model-description">High-quality Stable Diffusion
-                        variant #image</p>
-                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
-                        Now</a>
-                </div>
-                <div id="sd-large" class="model-card premium"
-                    data-category="image">
-                    <img class="model-image" src="/site/model-img/sdxl.png"
-                        alt="SD Large">
-                    <h3 class="model-name">SD Large</h3>
-                    <p class="model-description">Large-scale Stable Diffusion
-                        model #image</p>
-                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
-                        Now</a>
-                </div>
-                <div id="sd-3-turbo" class="model-card" data-category="image">
-                    <img class="model-image" src="/site/model-img/sdxl.png"
-                        alt="SD 3 Turbo">
-                    <h3 class="model-name">SD 3 Turbo</h3>
-                    <p class="model-description">Fast Stable Diffusion 3
-                        variant #image</p>
-                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
-                        Now</a>
-                </div>
-                <div id="sd-3" class="model-card" data-category="image">
-                    <img class="model-image" src="/site/model-img/sdxl.png"
-                        alt="SD 3">
-                    <h3 class="model-name">SD 3</h3>
-                    <p class="model-description">Latest Stable Diffusion
-                        version #image</p>
-                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
-                        Now</a>
-                </div>
-                <div id="flux-1-pro" class="model-card premium"
-                    data-category="image">
-                    <img class="model-image" src="/site/model-img/flux.png"
-                        alt="Flux.1 Pro">
-                    <h3 class="model-name">Flux.1 Pro</h3>
-                    <p class="model-description">Professional image generation
-                        model</p>
-                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
-                        Now</a>
-                </div>
-                <div id="flux-1" class="model-card" data-category="image">
-                    <img class="model-image" src="/site/model-img/flux.png"
-                        alt="Flux.1">
-                    <h3 class="model-name">Flux.1</h3>
-                    <p class="model-description">Standard image generation
-                        model</p>
-                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
-                        Now</a>
-                </div>
-
-                <div id="chatgpt-3-5" class="model-card" data-category="chat">
-                    <img class="model-image" src="/site/model-img/dall-e.png"
-                        alt="ChatGPT-3.5">
-                    <h3 class="model-name">ChatGPT-3.5</h3>
-                    <p class="model-description">OpenAI's popular language
-                        model</p>
-                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
-                        Now</a>
-                </div>
-                <div id="chatgpt-4-omni" class="model-card premium"
+                <div id="chatgpt-4-omni" class="model-card premium highlight"
                     data-category="chat">
-                    <img class="model-image" src="/site/model-img/dall-e.png"
+                    <img class="model-image" src="model-img/dall-e.png"
                         alt="ChatGPT-4 Omni">
                     <h3 class="model-name">ChatGPT-4 Omni</h3>
                     <p class="model-description">Advanced multi-modal AI
@@ -357,9 +230,9 @@ font-style: normal
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
                         Now</a>
                 </div>
-                <div id="claude-3-opus" class="model-card premium"
+                <div id="claude-3-opus" class="model-card premium highlight"
                     data-category="chat">
-                    <img class="model-image" src="/site/model-img/claude.png"
+                    <img class="model-image" src="model-img/claude.png"
                         alt="Claude 3 Opus">
                     <h3 class="model-name">Claude 3 Opus</h3>
                     <p class="model-description">Anthropic's latest language
@@ -369,7 +242,7 @@ font-style: normal
                 </div>
                 <div id="claude-3-5" class="model-card"
                     data-category="chat">
-                    <img class="model-image" src="/site/model-img/claude.png"
+                    <img class="model-image" src="model-img/claude.png"
                         alt="Claude 3.5">
                     <h3 class="model-name">Claude 3.5 Sonnet</h3>
                     <p class="model-description">Anthropic's latest language
@@ -379,7 +252,7 @@ font-style: normal
                 </div>
                 <div id="gemini-pro-1-5" class="model-card premium"
                     data-category="chat">
-                    <img class="model-image" src="/site/model-img/gemini.png"
+                    <img class="model-image" src="model-img/gemini.png"
                         alt="Gemini Pro 1.5">
                     <h3 class="model-name">Gemini Pro 1.5</h3>
                     <p class="model-description">Google's advanced language
@@ -389,7 +262,7 @@ font-style: normal
                 </div>
                 <div id="gemini-pro-1-0" class="model-card"
                     data-category="chat">
-                    <img class="model-image" src="/site/model-img/gemini.png"
+                    <img class="model-image" src="model-img/gemini.png"
                         alt="Gemini Pro 1.0">
                     <h3 class="model-name">Gemini Pro 1.0</h3>
                     <p class="model-description">Google's language model</p>
@@ -398,17 +271,26 @@ font-style: normal
                 </div>
                 <div id="llama-3" class="model-card premium"
                     data-category="chat">
-                    <img class="model-image" src="/site/model-img/meta.png"
-                        alt="LLaMa 3">
-                    <h3 class="model-name">LLaMa 3</h3>
+                    <img class="model-image" src="model-img/meta.png"
+                        alt="LLaMA 3">
+                    <h3 class="model-name">LLaMA 3</h3>
                     <p class="model-description">Meta's open-source language
+                        model</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
+                <div id="chatgpt-3-5" class="model-card" data-category="chat">
+                    <img class="model-image" src="model-img/dall-e.png"
+                        alt="ChatGPT-3.5">
+                    <h3 class="model-name">ChatGPT-3.5</h3>
+                    <p class="model-description">OpenAI's popular language
                         model</p>
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
                         Now</a>
                 </div>
                 <div id="command-r-plus" class="model-card"
                     data-category="chat">
-                    <img class="model-image" src="/site/model-img/commandr.png"
+                    <img class="model-image" src="model-img/commandr.png"
                         alt="Command R+">
                     <h3 class="model-name">Command R+</h3>
                     <p class="model-description">Specialized command-line AI</p>
@@ -417,7 +299,7 @@ font-style: normal
                 </div>
                 <div id="mistral-medium" class="model-card"
                     data-category="chat">
-                    <img class="model-image" src="/site/model-img/mistral.png"
+                    <img class="model-image" src="model-img/mistral.png"
                         alt="Mistral Medium">
                     <h3 class="model-name">Mistral Medium</h3>
                     <p class="model-description">Balanced language model</p>
@@ -425,7 +307,7 @@ font-style: normal
                         Now</a>
                 </div>
                 <div id="palm-2-bard" class="model-card" data-category="chat">
-                    <img class="model-image" src="/site/model-img/palm.png"
+                    <img class="model-image" src="model-img/palm.png"
                         alt="Palm 2 (Bard)">
                     <h3 class="model-name">Palm 2 (Bard)</h3>
                     <p class="model-description">Google's conversational AI</p>
@@ -433,17 +315,113 @@ font-style: normal
                         Now</a>
                 </div>
                 <div id="vicuna-13b" class="model-card" data-category="chat">
-                    <img class="model-image" src="/site/model-img/vicuna.png"
+                    <img class="model-image" src="model-img/vicuna.png"
                         alt="Vicuna-13b">
                     <h3 class="model-name">Vicuna-13b</h3>
                     <p class="model-description">Open-source language model</p>
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
                         Now</a>
                 </div>
+                <div id="sdxl-v1-0" class="model-card" data-category="image">
+                    <img class="model-image" src="model-img/sdxl.png"
+                        alt="SDXL v1.0">
+                    <h3 class="model-name">SDXL v1.0</h3>
+                    <p class="model-description">Advanced image generation
+                        model</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
+                <div id="dall-e-2" class="model-card" data-category="image">
+                    <img class="model-image" src="model-img/dall-e.png"
+                        alt="DALL-E 2">
+                    <h3 class="model-name">DALL-E 2</h3>
+                    <p class="model-description">OpenAI's image generation
+                        model</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
+                <div id="dall-e-3" class="model-card premium"
+                    data-category="image">
+                    <img class="model-image" src="model-img/dall-e.png"
+                        alt="DALL-E 3">
+                    <h3 class="model-name">DALL-E 3</h3>
+                    <p class="model-description">Latest version of OpenAI's
+                        image model</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
+                <div id="imagen-3" class="model-card premium highlight"
+                    data-category="image">
+                    <img class="model-image" src="model-img/google.png"
+                        alt="Imagen 3">
+                    <h3 class="model-name">Imagen 3</h3>
+                    <p class="model-description">Google's advanced image
+                        generation</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
+                <div id="sd-ultra" class="model-card premium highlight"
+                    data-category="image">
+                    <img class="model-image" src="model-img/sdxl.png"
+                        alt="Stable Diffusion Ultra">
+                    <h3 class="model-name">Stable Diffusion Ultra</h3>
+                    <p class="model-description">High-quality Stable Diffusion
+                        variant #image</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
+                <div id="sd-large" class="model-card premium"
+                    data-category="image">
+                    <img class="model-image" src="model-img/sdxl.png"
+                        alt="Stable Diffusion Large">
+                    <h3 class="model-name">Stable Diffusion Large</h3>
+                    <p class="model-description">Large-scale Stable Diffusion
+                        model #image</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
+                <div id="sd-3-turbo" class="model-card" data-category="image">
+                    <img class="model-image" src="model-img/sdxl.png"
+                        alt="Stable Diffusion 3 Turbo">
+                    <h3 class="model-name">Stable Diffusion 3 Turbo</h3>
+                    <p class="model-description">Fast Stable Diffusion 3
+                        variant #image</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
+                <div id="sd-3" class="model-card" data-category="image">
+                    <img class="model-image" src="model-img/sdxl.png"
+                        alt="Stable Diffusion 3">
+                    <h3 class="model-name">Stable Diffusion 3</h3>
+                    <p class="model-description">Latest Stable Diffusion
+                        version #image</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
+                <div id="flux-1-pro" class="model-card premium highlight"
+                    data-category="image">
+                    <img class="model-image" src="model-img/flux.png"
+                        alt="Flux.1 Pro">
+                    <h3 class="model-name">Flux.1 Pro</h3>
+                    <p class="model-description">Professional image generation
+                        model</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
+                <div id="flux-1" class="model-card" data-category="image">
+                    <img class="model-image" src="model-img/flux.png"
+                        alt="Flux.1">
+                    <h3 class="model-name">Flux.1</h3>
+                    <p class="model-description">Standard image generation
+                        model</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
 
-                <div id="sdxl-video" class="model-card premium"
+
+                <div id="sdxl-video" class="model-card premium highlight"
                     data-category="video">
-                    <img class="model-image" src="/site/model-img/sdxl.png"
+                    <img class="model-image" src="model-img/sdxl.png"
                         alt="SDXL Video">
                     <h3 class="model-name">SDXL Video</h3>
                     <p class="model-description">Video generation using SDXL</p>
@@ -452,16 +430,16 @@ font-style: normal
                 </div>
                 <div id="damo-text-to-video" class="model-card"
                     data-category="video">
-                    <img class="model-image" src="/site/model-img/domo.png"
+                    <img class="model-image" src="model-img/domo.png"
                         alt="DAMO Text-To-Video">
-                    <h3 class="model-name">DOMO Text-To-Video</h3>
+                    <h3 class="model-name">DAMO Text-To-Video</h3>
                     <p class="model-description">Text-based video generation</p>
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
                         Now</a>
                 </div>
                 <div id="videocrafter" class="model-card premium"
                     data-category="video">
-                    <img class="model-image" src="/site/model-img/videocrafter.png"
+                    <img class="model-image" src="model-img/videocrafter.png"
                         alt="VideoCrafter">
                     <h3 class="model-name">VideoCrafter</h3>
                     <p class="model-description">Advanced video creation
@@ -471,7 +449,7 @@ font-style: normal
                 </div>
                 <div id="dreamlike" class="model-card premium"
                     data-category="video">
-                    <img class="model-image" src="/site/model-img/dreamlike.png"
+                    <img class="model-image" src="model-img/dreamlike.png"
                         alt="DreamLike">
                     <h3 class="model-name">DreamLike</h3>
                     <p class="model-description">Dreamlike video generation</p>
@@ -480,7 +458,7 @@ font-style: normal
                 </div>
                 <div id="openjourney" class="model-card premium"
                     data-category="video">
-                    <img class="model-image" src="/site/model-img/openjourney.png"
+                    <img class="model-image" src="model-img/openjourney.png"
                         alt="OpenJourney">
                     <h3 class="model-name">OpenJourney</h3>
                     <p class="model-description">Open-source video
@@ -491,7 +469,7 @@ font-style: normal
 
                 <div id="musicgen-melody" class="model-card"
                     data-category="music">
-                    <img class="model-image" src="/site/model-img/meta.png"
+                    <img class="model-image" src="model-img/meta.png"
                         alt="MusicGen Melody">
                     <h3 class="model-name">MusicGen Melody</h3>
                     <p class="model-description">Melody-focused music
@@ -499,9 +477,9 @@ font-style: normal
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
                         Now</a>
                 </div>
-                <div id="musicgen-large" class="model-card premium"
+                <div id="musicgen-large" class="model-card premium highlight"
                     data-category="music">
-                    <img class="model-image" src="/site/model-img/meta.png"
+                    <img class="model-image" src="model-img/meta.png"
                         alt="MusicGen Large">
                     <h3 class="model-name">MusicGen Large</h3>
                     <p class="model-description">Large-scale music
@@ -583,7 +561,7 @@ font-style: normal
         </main>
         <footer class="footer">
             <div class="footer-logo">
-                <img src="/site/img/geneplore.png" alt="Geneplore Logo">
+                <img src="img/geneplore.png" alt="Geneplore Logo">
             </div>
             <div class="footer-content">
                 <div class="footer-section">
@@ -618,7 +596,7 @@ font-style: normal
                                 Pro</a></li>
                         <li><a href="models.html#gemini-pro-1-5">Gemini 1.5
                                 Pro</a></li>
-                        <li><a href="models.html#sd-large">SD large</a></li>
+                        <li><a href="models.html#sd-large">Stable Diffusion large</a></li>
                     </ul>
                 </div>
             </div>
@@ -626,11 +604,11 @@ font-style: normal
                 <hr>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 Geneplore. All rights reserved.</p>
+                <p>&copy; 2024 Geneplore. All rights reserved.</p>
             </div>
         </footer>
-        <script src="/site/js/main.js"></script>
-        <script src="/site/js/navbar.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/navbar.js"></script>
         <script>
                     document.addEventListener('DOMContentLoaded', function() {
                         const modelLinks = document.querySelectorAll('.model-link');
@@ -656,6 +634,6 @@ font-style: normal
                         });
                     });
         </script>
-        <script src="/site/js/models.js"></script>
+        <script src="js/models.js"></script>
     </body>
 </html>
