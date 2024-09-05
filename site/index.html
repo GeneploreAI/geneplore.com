@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600&f[]=satoshi@700,500,400&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href>
+        <link rel="shortcut icon" href="img/geneplore_color_logo_circular.png"
+            type="image/x-icon">
+        <style>
+                @font-face {
+    font-family: ProximaNova;
+    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot);
+    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.woff) format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot);
+    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.woff) format('woff');
+    font-weight: 600;
+    font-style: normal
+}
+            </style>
+        <script language=JavaScript>            
+                        function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+                        
+                        if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+                        
+                        document.onmousedown = rtclickcheck;
+                        
+                        </script>
+        <script type="text/javascript">
+                function mousehandler(e) {
+                    var myevent = (isNS) ? e : event;
+                    var eventbutton = (isNS) ? myevent.which : myevent.button;
+                    if ((eventbutton == 2) || (eventbutton == 3)) return false;
+                }
+                document.oncontextmenu = mischandler;
+                document.onmousedown = mousehandler;
+                document.onmouseup = mousehandler;
+                function disableCtrlKeyCombination(e) {
+                    var forbiddenKeys = new Array("a", "s", "c", "x","u");
+                    var key;
+                    var isCtrl;
+                    if (window.event) {
+                        key = window.event.keyCode;
+                        if (window.event.ctrlKey)
+                            isCtrl = true;
+                        else
+                            isCtrl = false;
+                    }
+                    else {
+                        key = e.which;
+                        if (e.ctrlKey)
+                            isCtrl = true;
+                        else
+                            isCtrl = false;
+                    }
+                    if (isCtrl) {
+                        for (i = 0; i < forbiddenKeys.length; i++) {
+                            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                                return false;
+                            }
+                        }
+                    }
+                    return true;
+                }
+            </script>
+        <script>document.addEventListener('keydown', (event) => {
+                
+                if (event.ctrlKey && event.key === 'u') {
+                  event.preventDefault();
+                  alert('Viewing source code is disabled.');
+                }
+
+                if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+                  event.preventDefault();
+                  alert('Opening developer tools is disabled.');
+                }
+              });</script>
+        <style>
+                        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 400;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayLight.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 400;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayLightItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 100;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXXThin.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 100;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXXThinItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 200;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXThin.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 200;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXThinItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 300;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayThin.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 300;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayThinItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 500;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayRoman.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 500;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayRomanItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 600;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayMediu.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 600;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayMediumItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 700;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBold.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 700;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBoldItalic.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: normal;
+            font-weight: 900;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBlack.woff) format('woff')
+        }
+
+        @font-face {
+            font-family: neue haas grotesk display pro;
+            font-style: italic;
+            font-weight: 900;
+            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBlackItalic.woff) format('woff')
+        }
+              </style>
+        <title>Geneplore AI</title>
+    </head>
+    <body oncontextmenu="return false">
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="img/geneplore.png" alt="Geneplore AI Logo">
+                    <img src="img/geneplore-mini.png" alt="geneplore-mini">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="models.html">Models</a></li>
+                    <li><a href="https://geneplo.re/discord">Discord</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <span class="other">
+                    <div class="social-links">
+                        <a title="X" href="https://x.com/geneplore"><svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px"
+                                y="0px" width="30" height="30"
+                                fill="currentColor"
+                                viewBox="0 0 30 30">
+                                <path
+                                    d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
+                            </svg></a>
+                        <a title="YouTube"
+                            href="https://youtube.com/@geneplore">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px"
+                                y="0px" width="30" height="30"
+                                fill="currentColor"
+                                viewBox="0 0 50 50">
+                                <path
+                                    d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </span>
+            </nav>
+        </header>
+        <div class="offcanvas-menu">
+            <div class="offcanvas-menu-header">
+                <div class="logo">
+                    <img src="img/geneplore-mini.png" alt="Geneplore AI Logo">
+                </div>
+                <button class="close-menu" type="button">&times;</button>
+            </div>
+            <ul class="offcanvas-nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="models.html">Models</a></li>
+                <li><a href="https://geneplo.re/discord">Discord</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-social">
+                <a title="X" href="https://x.com/geneplore"><svg
+                        xmlns="http://www.w3.org/2000/svg" x="0px"
+                        y="0px" width="30" height="30"
+                        fill="currentColor"
+                        viewBox="0 0 30 30">
+                        <path
+                            d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
+                    </svg></a>
+                <a title="YouTube"
+                    href="https://youtube.com/@geneplore">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px"
+                        y="0px" width="30" height="30"
+                        fill="currentColor"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+                    </svg>
+                </a>
+            </div>
+                        <div class="dark-mode-toggle">
+                <label class="switch">
+                    <span class="visually-hidden">Dark Mode</span>
+                    <input type="checkbox" id="darkModeToggleOffcanvas">
+                    <span class="slider">
+                        <svg class="sun"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+                        </svg>
+                        <svg class="moon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="offcanvas-overlay"></div>
+        <main>
+            <section class="hero">
+                <div class="slideshow">
+                    <img src="img/a cat.png" class="slide active"
+                        alt="Slide 1">
+                    <img src="img/retriever.png" class="slide" alt="Slide 2">
+                    <img src="img/galaxy.png" class="slide" alt="Slide 3">
+                    <img src="img/the earth.png" class="slide" alt="Slide 4">
+                    <img src="img/snow.png" class="slide" alt="Slide 5">
+                    <img src="img/city2.png" class="slide" alt="Slide 6">
+                    <img src="img/city.png" class="slide" alt="Slide 7">
+                    <img src="img/landscape.png" class="slide" alt="Slide 8">
+                    <img src="img/car.jpg" class="slide" alt="Slide 9">
+                </div>
+                <div class="hero-content">
+                    <div class="hero-text animate-on-scroll fade-in-left">
+                        <h1>Geneplore AI</h1>
+                        <p>Geneplore AI is building the world's easiest way to use AI. We
+                            run Discord bots that allow you to chat, generate
+                            images, videos, and more, collaboratively.</p>
+                        <a
+                            href="https://discord.com/oauth2/authorize?client_id=1089317211652509811"
+                            class="cta-button">Add our bot</a>
+                    </div>
+                </div>
+            </section>
+            <div class="geneplore-cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 00-1.032-.211 50.89 50.89 0 00-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 002.433 3.984L7.28 21.53A.75.75 0 016 21v-4.03a48.527 48.527 0 01-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979z" />
+                            <path
+                                d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 001.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0015.75 7.5z" />
+                        </svg>
+                    </div>
+                    <h3>AI Chat</h3>
+                    <p>Engage in intelligent conversations with our advanced AI
+                        chatbot.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3>Image Generation</h3>
+                    <p>Create stunning visuals with our AI image
+                        generation tools such as SDXL and FLUX.1.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06z" />
+                        </svg>
+                    </div>
+                    <h3>Video Creation</h3>
+                    <p>Bring your ideas to life with AI video
+                        generation.</p>
+                </div>
+            </div>
+
+            <section class="why-choose-us animate-on-scroll fade-in-up">
+                <h2>Why Choose Us</h2>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item active">
+                            <h3>Cutting-Edge AI Technology</h3>
+                            <p>Experience the power of state-of-the-art AI
+                                models, like GPT-4o, FLUX.1 Pro, and Claude 3.5, constantly updated to provide you with
+                                the most advanced capabilities in the
+                                market.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Unparalleled User Experience</h3>
+                            <p>Our intuitive interface and seamless integration
+                                make it easy for you to harness the full
+                                potential of AI in your daily tasks.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Use AI In Your Conversations</h3>
+                            <p>Collaborate with AI and your team at the same time on one application.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h3>Continuous Innovation</h3>
+                            <p>We're committed to pushing the boundaries of AI,
+                                regularly introducing new features and
+                                improvements to keep you at the forefront of
+                                technology.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button type="button" class="carousel-button prev"
+                            title="Previous Slide">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960"
+                                width="24px" fill="#e8eaed">
+                                <path
+                                    d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="carousel-button next"
+                            title="Next Slide">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960"
+                                width="24px" fill="#e8eaed">
+                                <path
+                                    d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="carousel-dots"></div>
+                    <button type="button" class="learn-more-btn">Learn
+                        More</button>
+                </div>
+            </section>
+
+            <section class="statistics">
+                <div class="stat-container">
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="180000">0</h3>
+                        <p class="stat-label">Lifetime active users</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="1140000">0</h3>
+                        <p class="stat-label">Generations</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number" data-target="54000">0</h3>
+                        <p class="stat-label">Servers</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subscription-plans animate-on-scroll fade-in-up">
+                <h2>Choose Your Plan</h2>
+                <div class="plan-categories">
+                    <div class="plan-category">
+                        <h3 class="category-title">ChatGPT</h3>
+                        <div class="plan-cards">
+                            <div class="plan-card featured">
+                                <div class="featured-banner">Most Popular</div>
+                                <img src="img/black-openai.png"
+                                    class="plan-card-image" alt="basic">
+                                <h4>Basic</h4>
+                                <p class="price">$3.99<span>/month</span></p>
+                                <ul>
+                                    <li>Access to Premium Models</li>
+                                    <li>25.000 credits</li>
+                                    <li>Private Conversations in DMs</li>
+                                    <li>50% More XP</li>
+                                </ul>
+                                <a class="subscribe-btn" href="https://discord.com/channels/1092173065967911002/shop">Subscribe</a>
+                            </div>
+                            <div class="plan-card">
+                                <img src="img/cyan openai.jpg"
+                                    class="plan-card-image" alt="pro">
+                                <h4>Pro</h4>
+                                <p class="price">$8.99<span>/month</span></p>
+                                <ul>
+                                    <li>Access to Premium Models</li>
+                                    <li>100.000 credits</li>
+                                    <li>Private Conversations in DMs</li>
+                                    <li>2x More XP</li>
+                                </ul>
+                                <a class="subscribe-btn" href="https://discord.com/channels/1092173065967911002/shop">Subscribe</a>
+                            </div>
+                            <div class="plan-card">
+                                <img src="img/aurora_circle.png"
+                                    class="plan-card-image" alt="ultra">
+
+                                <h4>Ultra</h4>
+                                <p class="price">$19.99<span>/month</span></p>
+                                <ul>
+                                    <li>Access to Premium Models</li>
+                                    <li>200.000 credits</li>
+                                    <li>Private Conversations in DMs</li>
+                                    <li>4x More XP</li>
+                                    <li>Beta Access</li>
+                                </ul>
+                                <a class="subscribe-btn" href="https://discord.com/channels/1092173065967911002/shop">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-category">
+                        <h3 class="category-title">Gemini</h3>
+                        <div class="plan-cards">
+                            <div class="plan-card">
+                                <img src="img/gemini-icon.png"
+                                    class="plan-card-image" alt="gemini">
+                                <h4>Gemini Subscription</h4>
+                                <p class="price">$4.99<span>/month</span></p>
+                                <ul>
+                                    <li>250 messages per day</li>
+                                    <li>Advanced Features</li>
+                                    <li>Longer Concept and Output</li>
+                                    <li>Priority Support</li>
+                                </ul>
+                                <a class="subscribe-btn" href="https://discord.com/application-directory/1196486148046983168/store/1267577604114743357">Subscribe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-logo">
+                <img src="img/geneplore.png" alt="Geneplore Logo">
+            </div>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h2 class="footer-title">Explore the world of AI</h2>
+                    <p>Geneplore AI is building the easiest way to use AI with your community.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a
+                                href="features.html">Features</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Latest Updates</h3>
+                    <ul>
+                        <li><a href="changelog.html#v46">v 4.6</a></li>
+                        <li><a href="changelog.html#v451">v 4.5.1</a></li>
+                        <li><a href="changelog.html#v45geminiv10">v 4.5</a></li>
+                        <li><a href="changelog.html#v44">v 4.4</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Latest Models</h3>
+                    <ul>
+                        <li><a href="models.html#imagen3">Imagen 3</a></li>
+                        <li><a href="models.html#flux-1">Flux.1, FLux.1
+                                Pro</a></li>
+                        <li><a href="models.html#gemini-pro-1-5">Gemini 1.5
+                                Pro</a></li>
+                        <li><a href="models.html#sd-large">SD large</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+                <hr>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Geneplore. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="js/navbar.js"></script>
+        <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const modelLinks = document.querySelectorAll('.model-link');
+                    
+                    modelLinks.forEach(link => {
+                        link.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            
+                            const targetId = this.getAttribute('href').substring(1);
+                            const targetElement = document.getElementById(targetId);
+                            
+                            if (targetElement) {
+                                targetElement.scrollIntoView({
+                                    behavior: 'smooth',
+                                    block: 'start'
+                                });
+                                targetElement.classList.add('highlight');
+                                setTimeout(() => {
+                                    targetElement.classList.remove('highlight');
+                                }, 2000);
+                            }
+                        });
+                    });
+                });
+                </script>
+    </body>
+</html>
