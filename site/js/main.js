@@ -1,3 +1,16 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const modal = document.getElementById('videoModal');
+  const video = document.getElementById('modalVideo');
+
+  modal.style.display = 'block';
+  video.play();
+
+  setTimeout(function() {
+      modal.style.display = 'none';
+      video.pause();
+  }, 4300);
+});
+
  document.addEventListener('DOMContentLoaded', () => {
   const slides = document.querySelectorAll('.slide');
   const dots = document.querySelector('.dots');
