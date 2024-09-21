@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const introModal = document.getElementById('introModal');
+  const introVideo = document.getElementById('introVideo');
+  if (!localStorage.getItem('introSeen')) {
+    introModal.style.display = 'block';
+    introVideo.play();
+
+    introVideo.addEventListener('ended', function () {
+      introModal.style.display = 'none';
+      localStorage.setItem('introSeen', 'true');
+    });
+  }
+});
+
  document.addEventListener('DOMContentLoaded', () => {
   const slides = document.querySelectorAll('.slide');
   const dots = document.querySelector('.dots');
