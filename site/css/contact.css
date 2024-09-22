@@ -51,10 +51,6 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.8;
 }
 
-body.dark-mode .contact-info p {
-    color: #ffffff;
-}
-
 .contact-details {
     margin-bottom: 2.5rem;
 }
@@ -114,10 +110,6 @@ body.dark-mode .contact-info p {
     color: #444;
 }
 
-body.dark-mode .form-group label {
-    color: #ffffff;
-}
-
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -127,13 +119,6 @@ body.dark-mode .form-group label {
     border: 1px solid #ddd;
     border-radius: 6px;
     transition: border-color 0.3s ease;
-}
-
-body.dark-mode .form-group input,
-body.dark-mode .form-group textarea {
-    background-color: #616161;
-    color: #fff;
-    border-color: #555;
 }
 
 .form-group input:focus,

@@ -1,33 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found</title>
+    <title>Page Not Found - Geneplore</title>
+    <link rel="stylesheet" href="/site/css/404.css">
+    <link rel="stylesheet" href="/site/css/main.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600&f[]=satoshi@700,500,400&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href>
+    <link rel="shortcut icon"
+      href="/site/img/geneplore_color_logo_circular.png"
+      type="image/x-icon">
+    <style>
+        @font-face {
+font-family: ProximaNova;
+src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot);
+src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.woff) format('woff');
+font-weight: 400;
+font-style: normal
+}
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px 16px; border-radius: 3px; }
-      #message h3 { color: #888; font-weight: normal; font-size: 16px; margin: 16px 0 12px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
+@font-face {
+font-family: ProximaNova;
+src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot);
+src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.woff) format('woff');
+font-weight: 600;
+font-style: normal
+}
     </style>
+    <script language=JavaScript>            
+                function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+                
+                if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+                
+                document.onmousedown = rtclickcheck;
+                
+                </script>
+    <script type="text/javascript">
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        function disableCtrlKeyCombination(e) {
+            var forbiddenKeys = new Array("a", "s", "c", "x","u");
+            var key;
+            var isCtrl;
+            if (window.event) {
+                key = window.event.keyCode;
+                if (window.event.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            else {
+                key = e.which;
+                if (e.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            if (isCtrl) {
+                for (i = 0; i < forbiddenKeys.length; i++) {
+                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+    </script>
+    <script>document.addEventListener('keydown', (event) => {
+        
+        if (event.ctrlKey && event.key === 'u') {
+          event.preventDefault();
+          alert('Viewing source code is disabled.');
+        }
+
+        if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+          event.preventDefault();
+          alert('Opening developer tools is disabled.');
+        }
+      });</script>
+    <style>
+                @font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayLight.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: italic;
+    font-weight: 400;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayLightItalic.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: normal;
+    font-weight: 100;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXXThin.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: italic;
+    font-weight: 100;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXXThinItalic.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: normal;
+    font-weight: 200;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXThin.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: italic;
+    font-weight: 200;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXThinItalic.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: normal;
+    font-weight: 300;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayThin.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: italic;
+    font-weight: 300;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayThinItalic.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: normal;
+    font-weight: 500;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayRoman.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: italic;
+    font-weight: 500;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayRomanItalic.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: normal;
+    font-weight: 600;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayMediu.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: italic;
+    font-weight: 600;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayMediumItalic.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBold.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: italic;
+    font-weight: 700;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBoldItalic.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: normal;
+    font-weight: 900;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBlack.woff) format('woff')
+}
+
+@font-face {
+    font-family: neue haas grotesk display pro;
+    font-style: italic;
+    font-weight: 900;
+    src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBlackItalic.woff) format('woff')
+}
+      </style>
   </head>
   <body>
-    <div id="message">
-      <h2>404</h2>
-      <h1>Page Not Found</h1>
-      <p>The specified file was not found on this website. Please check the URL for mistakes and try again.</p>
-      <h3>Why am I seeing this?</h3>
-      <p>This page was generated by the Firebase Command-Line Interface. To modify it, edit the <code>404.html</code> file in your project's configured <code>public</code> directory.</p>
+    <div class="container" id="message">
+      <div class="error-content">
+        <img src="/img/404.png" alt="404">
+        <h2>Oops! Page Not Found</h2>
+        <p>The page you're looking for seems to have wandered off into the
+          digital wilderness.</p>
+        <a href="/site" class="btn-home">Return to Homepage</a>
+      </div>
     </div>
   </body>
 </html>
