@@ -29,6 +29,15 @@ h1 {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+body.dark-mode .changelog-card {
+    background-color: #212121;
+    color: #ffffff;
+}
+
+body.dark-mode .changelog-card h2 {
+    color: #ffffff;
+}
+
 .changelog-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -99,6 +108,10 @@ h1 {
     transform: none;
 }
 
+body.dark-mode .pagination-btn:disabled {
+    background-color: #7c4dff;
+}
+
 #page-numbers {
     display: flex;
     justify-content: center;
@@ -120,6 +133,11 @@ h1 {
     font-weight: 400;
     background-color: #f1f8ff;
     color: #333;
+}
+
+body.dark-mode .page-number {
+    background-color: #212121;
+    color: #ffffff;
 }
 
 .page-number:hover {

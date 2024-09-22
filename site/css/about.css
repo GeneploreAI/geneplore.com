@@ -42,6 +42,10 @@ body {
     color: #3c3c3c;
 }
 
+body.dark-mode .about-hero__title {
+    color: #ffffff;
+}
+
 .about-hero__text {
     margin-bottom: 1.5rem;
     font-family: 'Satoshi', sans-serif;
@@ -49,6 +53,10 @@ body {
     font-size: 1.2rem;
     color: #3c3c3c;
     max-width: 500px;
+}
+
+body.dark-mode .about-hero__text {
+    color: #ffffff;
 }
 
 .about-hero__cta {
@@ -72,6 +80,10 @@ hr {
     border: 1px solid #808080;
     width: 100%;
     margin: 0;
+}
+
+body.dark-mode hr {
+    border-color: #ffffff;
 }
 
 @media (max-width: 768px) {
@@ -175,6 +187,15 @@ hr {
     font-size: 1rem;
     line-height: 1.6;
     color: #ffffff;
+}
+
+body.dark-mode .about-section__text,
+body.dark-mode .about-section__title {
+    color: #ffffff;
+}
+
+body.dark-mode .about-hero {
+    background-color: #050505;
 }
 
 @media (max-width: 600px) {
