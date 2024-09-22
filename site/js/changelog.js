@@ -1,5 +1,13 @@
 const changelogData = [
     {
+        version: "v4.7",
+        changes: [
+            "Added OpenAI o1-preview and o1-mini",
+            "Added Auto-Credit Refill, Features for Server Owners",
+            "Bug Fixes, Improved Error Handling"
+        ]
+    },
+    {
         version: "v4.6",
         changes: [
             "Added FLUX.1 and Google's Imagen 3 to /image command",
@@ -14,7 +22,7 @@ const changelogData = [
         ]
     },
     {
-        version: "v4.5 Gemini v1.0",
+        version: "v4.5 & Gemini v1.0",
         changes: [
             "Introduced ability to ping the bot for chat in any text channel",
             "Added new Gemini bot with free and Pro versions",
