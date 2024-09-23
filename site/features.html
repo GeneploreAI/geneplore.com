@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/features.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <title>Geneplore Features</title>
+        <link rel="preconnect"
+            href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600&f[]=satoshi@700,500,400&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="shortcut icon"
+            href="/img/geneplore_color_logo_circular.png"
+            type="image/x-icon">
+        <style>
+            @font-face {
+font-family: ProximaNova;
+src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot);
+src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.woff) format('woff');
+font-weight: 400;
+font-style: normal
+}
+
+@font-face {
+font-family: ProximaNova;
+src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot);
+src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.woff) format('woff');
+font-weight: 600;
+font-style: normal
+}
+        </style>
+        <script language=JavaScript>            
+            function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+            
+            if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+            
+            document.onmousedown = rtclickcheck;
+            
+            </script>
+        <script type="text/javascript">
+    function mousehandler(e) {
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    function disableCtrlKeyCombination(e) {
+        var forbiddenKeys = new Array("a", "s", "c", "x","u");
+        var key;
+        var isCtrl;
+        if (window.event) {
+            key = window.event.keyCode;
+            if (window.event.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        else {
+            key = e.which;
+            if (e.ctrlKey)
+                isCtrl = true;
+            else
+                isCtrl = false;
+        }
+        if (isCtrl) {
+            for (i = 0; i < forbiddenKeys.length; i++) {
+                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+</script>
+        <script>document.addEventListener('keydown', (event) => {
+                
+    if (event.ctrlKey && event.key === 'u') {
+      event.preventDefault();
+      alert('Viewing source code is disabled.');
+    }
+
+    if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+      event.preventDefault();
+      alert('Opening developer tools is disabled.');
+    }
+  });</script>
+    </head>
+    <body oncontextmenu="return false">
+        <header>
+            <nav class="navbar">
+                <a href="/index.html" class="logo">
+                    <img src="/img/geneplore.png" alt="GENEPLORE AI Logo">
+                    <img src="/img/geneplore-mini.png"
+                        alt="geneplore-mini">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a
+                            href="https://discord.com/oauth2/authorize?client_id=1089317211652509811">Bot</a></li>
+                    <li><a href="https://geneplo.re/discord">Discord</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <span class="other">
+                    <div class="theme-toggle main-theme-toggle">
+                        <input title="checkbox" type="checkbox"
+                            id="theme-switch" />
+                        <label for="theme-switch">
+                            <svg class="theme-icon sun-icon" width="800px"
+                                height="800px"
+                                viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="5" stroke="#1C274C"
+                                    stroke-width="1.5" />
+                                <path d="M12 2V4" stroke="#1C274C"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M12 20V22" stroke="#1C274C"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M4 12L2 12" stroke="#1C274C"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M22 12L20 12" stroke="#1C274C"
+                                    stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M19.7778 4.22266L17.5558 6.25424"
+                                    stroke="#1C274C" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path d="M4.22217 4.22266L6.44418 6.25424"
+                                    stroke="#1C274C" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path d="M6.44434 17.5557L4.22211 19.7779"
+                                    stroke="#1C274C" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                                <path d="M19.7778 19.7773L17.5558 17.5551"
+                                    stroke="#1C274C" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                            <svg class="theme-icon moon-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                height="24px" viewBox="0 -960 960 960"
+                                width="24px" fill="#e8eaed"><path
+                                    d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z" /></svg>
+                        </label>
+                    </div>
+                    <div class="social-links">
+                        <a title="X" href="https://x.com/geneplore"><svg
+                                xmlns="http://www.w3.org/2000/svg" x="0px"
+                                y="0px" width="30" height="30"
+                                fill="currentColor"
+                                viewBox="0 0 30 30">
+                                <path
+                                    d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
+                            </svg></a>
+                        <a title="YouTube"
+                            href="https://youtube.com/@geneplore">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px"
+                                y="0px" width="30" height="30"
+                                fill="currentColor"
+                                viewBox="0 0 50 50">
+                                <path
+                                    d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </span>
+            </nav>
+        </header>
+        <div class="offcanvas-menu">
+            <div class="offcanvas-menu-header">
+                <div class="logo">
+                    <img src="/img/geneplore-mini.png"
+                        alt="GENEPLORE AI Logo">
+                </div>
+                <button class="close-menu" type="button">&times;</button>
+            </div>
+            <ul class="offcanvas-nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a
+                        href="https://discord.com/oauth2/authorize?client_id=1089317211652509811">Bot</a></li>
+                <li><a href="https://geneplo.re/discord">Discord</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-social">
+                <a title="X" href="https://x.com/geneplore"><svg
+                        xmlns="http://www.w3.org/2000/svg" x="0px"
+                        y="0px" width="30" height="30"
+                        fill="currentColor"
+                        viewBox="0 0 30 30">
+                        <path
+                            d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
+                    </svg></a>
+                <a title="YouTube"
+                    href="https://youtube.com/@geneplore">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px"
+                        y="0px" width="30" height="30"
+                        fill="currentColor"
+                        viewBox="0 0 50 50">
+                        <path
+                            d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="theme-toggle">
+                <input title="checkbox" type="checkbox"
+                    id="theme-switch2" />
+                <label for="theme-switch2">
+                    <svg class="theme-icon sun-icon" width="800px"
+                        height="800px"
+                        viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="5" stroke="#1C274C"
+                            stroke-width="1.5" />
+                        <path d="M12 2V4" stroke="#1C274C"
+                            stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M12 20V22" stroke="#1C274C"
+                            stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M4 12L2 12" stroke="#1C274C"
+                            stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M22 12L20 12" stroke="#1C274C"
+                            stroke-width="1.5" stroke-linecap="round" />
+                        <path d="M19.7778 4.22266L17.5558 6.25424"
+                            stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path d="M4.22217 4.22266L6.44418 6.25424"
+                            stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path d="M6.44434 17.5557L4.22211 19.7779"
+                            stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                        <path d="M19.7778 19.7773L17.5558 17.5551"
+                            stroke="#1C274C" stroke-width="1.5"
+                            stroke-linecap="round" />
+                    </svg>
+                    <svg class="theme-icon moon-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#e8eaed"><path
+                            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z" /></svg>
+                </label>
+            </div>
+        </div>
+        <div class="offcanvas-overlay"></div>
+        <main><section class="summarize-section">
+                <div class="container">
+                    <svg viewBox="-2.4 -2.4 28.80 28.80" fill="none"
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"><g
+                            id="SVGRepo_bgCarrier" stroke-width="0"><rect
+                                x="-2.4" y="-2.4" width="28.80" height="28.80"
+                                rx="14.4" fill="#b57eec"
+                                strokewidth="0"></rect></g><g
+                            id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                            stroke-linejoin="round"></g><g
+                            id="SVGRepo_iconCarrier"> <path
+                                d="M14.8686 4.13134L14.1615 3.42423L14.1615 3.42423L14.8686 4.13134ZM7.81459 7.48152L8.08931 8.44304L7.81459 7.48152ZM5.57564 9.83884L6.55004 10.0637V10.0637L5.57564 9.83884ZM3 21L2.02561 20.7751C1.94808 21.1111 2.04909 21.4633 2.29289 21.7071C2.5367 21.9509 2.8889 22.0519 3.22486 21.9744L3 21ZM14.1611 18.4243L13.9363 17.4499L13.9363 17.4499L14.1611 18.4243ZM16.5185 16.1854L15.5569 15.9107L16.5185 16.1854ZM19.8686 9.13134L20.5757 9.83845V9.83845L19.8686 9.13134ZM19.8686 6.8686L19.1615 7.57571H19.1615L19.8686 6.8686ZM17.1314 4.13134L17.8385 3.42423V3.42423L17.1314 4.13134ZM20.5368 8.30899L19.5858 7.99997L20.5368 8.30899ZM20.5368 7.69095L19.5858 7.99997L20.5368 7.69095ZM15.4404 18.0251L15.9601 18.8794H15.9601L15.4404 18.0251ZM16.0539 17.4424L16.8804 18.0054L16.8804 18.0054L16.0539 17.4424ZM6.55756 7.94607L7.12056 8.77253L7.12056 8.77253L6.55756 7.94607ZM5.97487 8.55957L6.82922 9.07928L6.82922 9.07928L5.97487 8.55957ZM15.691 3.46313L15.382 2.51207L15.691 3.46313ZM16.309 3.46313L16.618 2.51207L16.618 2.51207L16.309 3.46313ZM9.14645 16.2676C9.53697 15.8771 9.53697 15.2439 9.14644 14.8534C8.75591 14.4629 8.12275 14.4629 7.73223 14.8534L9.14645 16.2676ZM10 14.5C10 14.7761 9.77614 15 9.5 15V17C10.8807 17 12 15.8807 12 14.5H10ZM9.5 15C9.22386 15 9 14.7761 9 14.5H7C7 15.8807 8.11929 17 9.5 17V15ZM9 14.5C9 14.2238 9.22386 14 9.5 14V12C8.11929 12 7 13.1193 7 14.5H9ZM9.5 14C9.77614 14 10 14.2238 10 14.5H12C12 13.1193 10.8807 12 9.5 12V14ZM14.1615 3.42423L12.2929 5.29286L13.7071 6.70708L15.5757 4.83845L14.1615 3.42423ZM12.7253 5.03845L7.53987 6.51999L8.08931 8.44304L13.2747 6.96149L12.7253 5.03845ZM4.60125 9.61398L2.02561 20.7751L3.97439 21.2248L6.55004 10.0637L4.60125 9.61398ZM3.22486 21.9744L14.386 19.3987L13.9363 17.4499L2.77514 20.0256L3.22486 21.9744ZM17.48 16.4601L18.9615 11.2747L17.0385 10.7252L15.5569 15.9107L17.48 16.4601ZM18.7071 11.7071L20.5757 9.83845L19.1615 8.42424L17.2929 10.2929L18.7071 11.7071ZM20.5757 6.16149L17.8385 3.42423L16.4243 4.83845L19.1615 7.57571L20.5757 6.16149ZM20.5757 9.83845C20.7621 9.65211 20.9449 9.47038 21.0858 9.30446C21.2342 9.12961 21.3938 8.90772 21.4879 8.618L19.5858 7.99997C19.6057 7.93858 19.6292 7.92986 19.5611 8.01011C19.4854 8.09928 19.3712 8.21456 19.1615 8.42424L20.5757 9.83845ZM19.1615 7.57571C19.3712 7.78538 19.4854 7.90066 19.5611 7.98984C19.6292 8.07008 19.6057 8.06136 19.5858 7.99997L21.4879 7.38194C21.3938 7.09222 21.2342 6.87033 21.0858 6.69548C20.9449 6.52957 20.7621 6.34783 20.5757 6.16149L19.1615 7.57571ZM21.4879 8.618C21.6184 8.21632 21.6184 7.78362 21.4879 7.38194L19.5858 7.99997V7.99997L21.4879 8.618ZM14.386 19.3987C14.988 19.2598 15.5141 19.1507 15.9601 18.8794L14.9207 17.1708C14.8157 17.2346 14.6727 17.28 13.9363 17.4499L14.386 19.3987ZM15.5569 15.9107C15.3493 16.6373 15.2966 16.7778 15.2274 16.8794L16.8804 18.0054C17.1743 17.574 17.3103 17.0541 17.48 16.4601L15.5569 15.9107ZM15.9601 18.8794C16.3257 18.6571 16.6395 18.359 16.8804 18.0054L15.2274 16.8794C15.1471 16.9973 15.0426 17.0966 14.9207 17.1708L15.9601 18.8794ZM7.53987 6.51999C6.94585 6.68971 6.426 6.82571 5.99457 7.11961L7.12056 8.77253C7.22213 8.70334 7.36263 8.65066 8.08931 8.44304L7.53987 6.51999ZM6.55004 10.0637C6.71998 9.32729 6.76535 9.18427 6.82922 9.07928L5.12053 8.03986C4.84922 8.48586 4.74017 9.01202 4.60125 9.61398L6.55004 10.0637ZM5.99457 7.11961C5.64092 7.36052 5.34291 7.67429 5.12053 8.03986L6.82922 9.07928C6.90334 8.95742 7.00268 8.85283 7.12056 8.77253L5.99457 7.11961ZM15.5757 4.83845C15.7854 4.62878 15.9007 4.51459 15.9899 4.43889C16.0701 4.37076 16.0614 4.39424 16 4.41418L15.382 2.51207C15.0922 2.60621 14.8704 2.76578 14.6955 2.91421C14.5296 3.05506 14.3479 3.2379 14.1615 3.42423L15.5757 4.83845ZM17.8385 3.42423C17.6521 3.23789 17.4704 3.05506 17.3045 2.91421C17.1296 2.76578 16.9078 2.60621 16.618 2.51207L16 4.41418C15.9386 4.39424 15.9299 4.37077 16.0101 4.43889C16.0993 4.51459 16.2146 4.62877 16.4243 4.83845L17.8385 3.42423ZM16 4.41418H16L16.618 2.51207C16.2163 2.38156 15.7837 2.38156 15.382 2.51207L16 4.41418ZM12.2929 6.70708L17.2929 11.7071L18.7071 10.2929L13.7071 5.29286L12.2929 6.70708ZM7.73223 14.8534L2.29289 20.2929L3.70711 21.7071L9.14645 16.2676L7.73223 14.8534Z"
+                                fill="#000000"></path> </g></svg>
+                    <h2 class="section-title">Summarize with Precision</h2>
+                    <div class="summarize-content">
+                        <div class="summarize-text">
+                            <p>Harness the power of AI to distill complex
+                                information into clear, concise summaries. Our
+                                advanced summarization feature helps you quickly
+                                grasp key points from lengthy documents,
+                                articles, or conversations.</p>
+                            <ul class="feature-list">
+                                <li>Intelligent content analysis</li>
+                                <li>Customizable summary length</li>
+                                <li>Multi-language support</li>
+                                <li>Preserve context and nuance</li>
+                            </ul>
+                            <a href="https://geneplo.re/discord"
+                                class="try-now-btn">Try
+                                Summarization</a>
+                        </div>
+                        <div class="summarize-visual">
+                            <img
+                                src="/img/geneplore_color_logo_circular.png"
+                                alt="Summarize Icon" class="summarize-icon">
+                            <div class="document-summary-container">
+                                <div class="document">
+                                    <div class="doc-content"></div>
+                                    <div class="doc-content"></div>
+                                    <div class="doc-content"></div>
+                                </div>
+                                <div class="arrow">→</div>
+                                <div class="summary">
+                                    <div class="summary-content"></div>
+                                    <div class="summary-content"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="chat-models-section">
+                <div class="container">
+                    <svg fill="#000000" viewBox="-2.4 -2.4 28.80 28.80"
+                        class="icon"
+                        xmlns="http://www.w3.org/2000/svg"><g
+                            id="SVGRepo_bgCarrier" stroke-width="0"><rect
+                                x="-2.4" y="-2.4" width="28.80" height="28.80"
+                                rx="14.4" fill="#b57eec"
+                                strokewidth="0"></rect></g><g
+                            id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                            stroke-linejoin="round"></g><g
+                            id="SVGRepo_iconCarrier"><path
+                                d="M10.035,18.069a7.981,7.981,0,0,0,3.938-1.035l3.332,3.332a2.164,2.164,0,0,0,3.061-3.061l-3.332-3.332A8.032,8.032,0,0,0,4.354,4.354a8.034,8.034,0,0,0,5.681,13.715ZM5.768,5.768A6.033,6.033,0,1,1,4,10.035,5.989,5.989,0,0,1,5.768,5.768Z"></path></g></svg>
+                    <h2 class="section-title">Explore Our AI Chat Models</h2>
+
+                    <div class="chat-features">
+                        <div class="feature-card models">
+                            <h3>Powerful Models</h3>
+                            <p>State-of-the-art AI models for human-like
+                                conversations</p>
+                            <ul>
+                                <li>GPT-4 Omni</li>
+                                <li>Claude 3 Opus</li>
+                                <li>Gemini Pro 1.5</li>
+                                <li>LLaMa 3</li>
+                            </ul>
+                        </div>
+
+                        <div class="feature-card characters">
+                            <h3>AI Characters</h3>
+                            <p>Diverse personalities for unique interactions</p>
+                            <ul>
+                                <li>Default</li>
+                                <li>Creative</li>
+                                <li>Precise</li>
+                                <li>Clyde</li>
+                            </ul>
+                        </div>
+
+                        <div class="feature-card plugins">
+                            <h3>Powerful Plugins</h3>
+                            <p>Extend capabilities with integrated tools</p>
+                            <ul>
+                                <li>GIPHY AI</li>
+                                <li>WolframAlpha</li>
+                                <li>BingSearch</li>
+                                <li>Image/Video Generation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="chat-demo">
+                        <div class="chat-messages">
+                            <div class="message user">
+                                <img src="/img/tgb25.png" alt="User"
+                                    class="avatar">
+                                <div class="message-content">
+                                    <span class="message-name owner-name">
+                                        [Owner] thegamebegins25
+                                    </span>
+                                    <p>hello, what's the weather like in
+                                        Hawaii</p>
+                                </div>
+                            </div>
+                            <div class="message ai">
+                                <img
+                                    src="/img/geneplore_color_logo_circular.png"
+                                    alt="AI"
+                                    class="avatar">
+                                <div class="message-content ai">
+                                    <span
+                                        class="message-name ai-message">AI Chat
+                                        <span class="app-badge">
+                                            <svg class="checkmark-icon"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 78.369 78.369">
+                                                <path
+                                                    d="M78.049,19.015L29.458,67.606c-0.428,0.428-1.121,0.428-1.548,0L0.32,40.015c-0.427-0.426-0.427-1.119,0-1.547l6.704-6.704
+                                            c0.428-0.427,1.121-0.427,1.548,0l20.113,20.112l41.113-41.113c0.429-0.427,1.12-0.427,1.548,0l6.703,6.704
+                                            C78.477,17.894,78.477,18.586,78.049,19.015z" />
+                                            </svg>
+                                            APP
+                                        </span></span>
+                                    <p>Hey there! 🌺 Right now, it’s typically
+                                        warm and sunny in Hawaii, which is
+                                        pretty much their usual weather all year
+                                        round! ☀️ If you want detailed updates,
+                                        you can check <a
+                                            href="https://www.hawaiinewsnow.com/weather/"
+                                            class="weather-link">Hawaii News
+                                            Now</a> or
+                                        <a
+                                            href="https://www.accuweather.com/en/us/honolulu/96817/current-weather/348211"
+                                            class="weather-link">AccuWeather</a>
+                                        for the latest forecasts!
+                                        🌴✨</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <a href="https://geneplo.re/discord"
+                                class="try-now-btn">Try It Now</a>
+                        </div>
+                    </div>
+                    <div class="video-demos">
+                        <div class="video-container">
+                            <h3>How Characters Work</h3>
+                            <video controls>
+                                <source src="//videos/characters-demo.mp4"
+                                    type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-container">
+                            <h3>How Plugins Work</h3>
+                            <video controls>
+                                <source src="//videos/plugins-demo.mp4"
+                                    type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </section></main>
+            <footer class="footer">
+                <div class="footer-logo">
+                    <img src="/img/geneplore.png" alt="Geneplore Logo">
+                </div>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h2 class="footer-title">Explore the world of AI</h2>
+                        <p>Geneplore is an AI-powered creative platform that
+                            helps
+                            you unleash your imagination.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                            <li><a
+                                    href="features.html">Features</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Latest Updates</h3>
+                        <ul>
+                            <li><a href="changelog.html#v46">v 4.7</a></li>
+                            <li><a href="changelog.html#v451">v 4.6</a></li>
+                            <li><a href="changelog.html#v45geminiv10">v
+                                    4.5.1</a></li>
+                            <li><a href="changelog.html#v44">v 4.5</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Latest Models</h3>
+                        <ul>
+                            <li><a href="models.html#o1">ChatGPT-o1</a></li>
+                            <li><a
+                                    href="models.html#o1-mini">ChatGPT-o1-mini</a></li>
+                            <li><a href="models.html#imagen-3">Imagen 3</a></li>
+                            <li><a href="models.html#flux-1">Flux.1, FLux.1
+                                    Pro</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <hr>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2023 Geneplore. All rights reserved.</p>
+                </div>
+            </footer>
+            <script src="/js/main.js"></script>
+            <script src="/js/navbar.js"></script>
+            <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const modelLinks = document.querySelectorAll('.model-link');
+                            
+                            modelLinks.forEach(link => {
+                                link.addEventListener('click', function(e) {
+                                    e.preventDefault();
+                                    
+                                    const targetId = this.getAttribute('href').substring(1);
+                                    const targetElement = document.getElementById(targetId);
+                                    
+                                    if (targetElement) {
+                                        targetElement.scrollIntoView({
+                                            behavior: 'smooth',
+                                            block: 'start'
+                                        });
+                                        targetElement.classList.add('highlight');
+                                        setTimeout(() => {
+                                            targetElement.classList.remove('highlight');
+                                        }, 2000);
+                                    }
+                                });
+                            });
+                        });
+                        </script>
+        </body>
+    </html>
