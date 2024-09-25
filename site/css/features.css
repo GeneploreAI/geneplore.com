@@ -289,6 +289,17 @@ body.dark-mode .feature-card li {
     font-family: 'gg sans';
     background-color: #fff;
     color: #222;
+    margin-bottom: 50px;
+}
+
+.discord-card-title {
+    font-family: 'Clash DIsplay';
+    font-size: 2.5rem;
+    color: #1a202c;
+}
+
+body.dark-mode .discord-card-title {
+    color: white;
 }
 
 body.dark-mode .discord-card {
@@ -394,6 +405,16 @@ body.dark-mode hr {
     .chat-features {
         flex-direction: column;
     }
+}
+
+.video-demos-title {
+    font-family: 'Clash Display';
+    font-size: 2.5rem;
+    color: #1a202c;
+}
+
+body.dark-mode .video-demos-title {
+    color: white;
 }
 
 .video-demos {
