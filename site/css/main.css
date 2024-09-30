@@ -76,6 +76,9 @@ body.dark-mode ::-webkit-scrollbar {
     margin: auto;
     width: 80px;
     height: 80px;
+    background: #b57eec;
+    border-radius: 50%;
+    padding: 5px;
     margin-bottom: 15px;
 }
 

@@ -7,13 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     function openMenu() {
         offcanvasMenu.classList.add('active');
         offcanvasOverlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
     }
 
     function closeMenuFunc() {
         offcanvasMenu.classList.remove('active');
         offcanvasOverlay.classList.remove('active');
-        document.body.style.overflow = '';
     }
 
     hamburger.addEventListener('click', openMenu);

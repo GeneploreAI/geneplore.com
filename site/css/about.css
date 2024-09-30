@@ -108,6 +108,7 @@ body.dark-mode hr {
     background-attachment: fixed;
     color: #ffffff;
     padding: 4rem 2rem;
+    margin-bottom: 100px;
     position: relative;
 }
 
@@ -160,7 +161,7 @@ body.dark-mode hr {
 }
 
 .pagination__button:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(158, 26, 179, 0.3);
 }
 
 .content-item {
@@ -198,6 +199,116 @@ body.dark-mode .about-hero {
     background-color: #050505;
 }
 
+.about-bot-title {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Neue Haas Grotesk DIsplay Pro';
+    color: #111;
+}
+
+.underline {
+    max-width: 90%;
+    width: auto;
+    background: #444;
+    margin: auto;
+    height: 3px;
+}
+
+body.dark-mode .underline {
+    background: #f9f9f9;
+}
+
+body.dark-mode .about-bot-title {
+    color: #f9f9f9;
+}
+
+.about-bot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 100px 100px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+body.dark-mode .about-bot {
+    background-color: #111;
+}
+
+body.dark-mode .bot-content-title,
+body.dark-mode .bot-content-text {
+    color: white;
+}
+
+.about-bot:hover {
+    transform: translateY(-5px);
+}
+
+.bot-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.bot-content-title {
+    color: #333;
+    font-size: 5.5rem;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-family: 'DM Sans';
+    font-weight: 500;
+}
+
+.bot-content-text {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6rem;
+    margin-bottom: 30px;
+}
+
+.bot-btn {
+    background-color: #8a19a099;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 13px 35px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.bot-btn:hover {
+    background-color: #8a19a0;
+}
+
+.bot-img {
+    flex: 1;
+    text-align: center;
+    max-width: 450px;
+}
+
+.bot-img img {
+    max-width: 80%;
+    width: auto;
+    border-radius: 50%;
+}
+
+.bot-img-media {
+    display: none;
+    flex: 1;
+    text-align: center;
+    max-width: 450px;
+}
+
+.bot-img-media img {
+    max-width: 80%;
+    width: auto;
+    border-radius: 50%;
+}
+
 @media (max-width: 600px) {
     .jumbotron-title {
         font-size: 2rem;
@@ -214,5 +325,42 @@ body.dark-mode .about-hero {
 
     .about-section__text {
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-bot {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bot-content {
+        padding: 10px;
+    }
+
+    .bot-img {
+        margin-top: 20px;
+    }
+
+    .bot-img {
+        display: none;
+    }
+
+    .bot-img-media {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-bot {
+        margin: 100px 20px;
+    }
+
+    .bot-content-title {
+        font-size: 4.5rem;
+    }
+
+    .bot-content-text {
+        font-size: 1em;
     }
 }
