@@ -31,6 +31,7 @@ body {
 
 .about-hero__img {
     max-width: 100%;
+    filter: drop-shadow(12px 10px 10px #50505099);
     height: auto;
 }
 
@@ -40,6 +41,7 @@ body {
     font-size: 5rem;
     margin-bottom: 0.5rem;
     color: #3c3c3c;
+    line-height: 100px;
 }
 
 body.dark-mode .about-hero__title {
@@ -62,7 +64,7 @@ body.dark-mode .about-hero__text {
 .about-hero__cta {
     display: inline-block;
     padding: 15px 40px;
-    background-color: #a21eb4;
+    background-color: #4a90e2; /* Changed to blue */
     color: #ffffff;
     font-family: 'Satoshi', sans-serif;
     text-decoration: none;
@@ -72,8 +74,8 @@ body.dark-mode .about-hero__text {
     transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #8a19a0;
+.about-hero__cta:hover {
+    background-color: #2980b9; /* Changed to darker blue */
 }
 
 hr {
@@ -157,11 +159,11 @@ body.dark-mode hr {
 }
 
 .pagination__button.active {
-    background-color: #a21eb4;
+    background-color: #4a90e2;
 }
 
 .pagination__button:hover {
-    background-color: rgba(158, 26, 179, 0.3);
+    background-color: rgba(41, 128, 185, 0.3);
 }
 
 .content-item {
@@ -269,7 +271,7 @@ body.dark-mode .bot-content-text {
 }
 
 .bot-btn {
-    background-color: #8a19a099;
+    background-color: #4a90e299;
     border: none;
     border-radius: 30px;
     color: #fff;
@@ -281,7 +283,7 @@ body.dark-mode .bot-content-text {
 }
 
 .bot-btn:hover {
-    background-color: #8a19a0;
+    background-color: #4a90e2;
 }
 
 .bot-img {
@@ -294,6 +296,7 @@ body.dark-mode .bot-content-text {
     max-width: 80%;
     width: auto;
     border-radius: 50%;
+    filter: drop-shadow(12px 10px 10px #50505099);
 }
 
 .bot-img-media {
@@ -306,6 +309,7 @@ body.dark-mode .bot-content-text {
 .bot-img-media img {
     max-width: 80%;
     width: auto;
+    filter: drop-shadow(12px 10px 10px #50505099);
     border-radius: 50%;
 }
 

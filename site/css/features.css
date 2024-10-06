@@ -141,6 +141,8 @@ body.dark-mode .feature-list li {
     width: auto;
     height: auto;
     margin-bottom: 20px;
+    filter: drop-shadow(12px 10px 10px #50505099);
+
 }
 
 .document-summary-container {
@@ -199,6 +201,16 @@ body.dark-mode .summary {
     border-radius: 20px;
     padding: 80px 0;
     font-family: 'Satoshi', sans-serif;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 0;
+    }
+
+    .tts-text {
+        text-align: start;
+    }
 }
 
 body.dark-mode .chat-models-section {
@@ -334,6 +346,35 @@ body.dark-mode .tts-text p {
     font-family: 'Montserrat', sans-serif;
 }
 
+.tts-example {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.tts-example p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tts-example audio {
+    filter: drop-shadow(5px 5px 10px #50505059);
+}
+
+.tts-example audio::-webkit-media-controls-play-button,
+.tts-example audio::-webkit-media-controls-panel {
+    background-color: #ddd;
+}
+
+
+body.dark-mode .tts-example .tts-text p {
+    color: #eee;
+}
+
 .tts-text .try-now-btn {
     background-color: #7289da;
     border: none;
@@ -361,40 +402,9 @@ body.dark-mode .tts-text p {
     max-width: 80%;
 }
 
-.equalizer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 60px;
-    margin-top: 20px;
-}
-
-.equalizer .bar {
-    width: 8px;
-    height: 100%;
-    background-color: var(--bar-color);
-    margin: 0 4px;
-    animation: equalizer 1s infinite ease-in-out;
-}
-
-.equalizer .bar:nth-child(1) {
-    animation-delay: 0s;
-}
-
-.equalizer .bar:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-.equalizer .bar:nth-child(3) {
-    animation-delay: 0.2s;
-}
-
-.equalizer .bar:nth-child(4) {
-    animation-delay: 0.3s;
-}
-
-.equalizer .bar:nth-child(5) {
-    animation-delay: 0.4s;
+.tts-icon {
+    filter: drop-shadow(12px 10px 10px #50505099);
+    border-radius: 50%;
 }
 
 @keyframes equalizer {
@@ -532,7 +542,7 @@ body.dark-mode .timestamp {
     font-size: 11px;
     background-color: #5865f2;
     color: #ffffff;
-    padding: 0 3px;
+    padding: 0 4px;
     height: 15px;
     margin-left: -2px;
     border-radius: 3px;
