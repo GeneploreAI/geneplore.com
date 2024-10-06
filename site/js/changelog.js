@@ -1,5 +1,20 @@
 const changelogData = [
     {
+        version: "TTS v1.0",
+        changes: [
+            "Added the TTS bot"
+        ]
+    },
+    {
+        version: "v4.8",
+        changes: [
+            "Added Custom Personalities",
+            "Create your own custom personalities that can be used by anyone in your server!",
+            "Bug Fixes, Improved Error Handling",
+            "Fixed some timeout issues and message errors."
+        ]
+    },
+    {
         version: "v4.7",
         changes: [
             "Added OpenAI o1-preview and o1-mini",
