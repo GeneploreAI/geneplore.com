@@ -27,20 +27,20 @@
             href="/img/geneplore_color_logo_circular.png"
             type="image/x-icon">
         <style>
-    @font-face {
-    font-family: ProximaNova;
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot);
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.woff) format('woff');
-    font-weight: 400;
-    font-style: normal
-    }
+        @font-face {
+        font-family: ProximaNova;
+        src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot);
+        src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.woff) format('woff');
+        font-weight: 400;
+        font-style: normal
+        }
 
-    @font-face {
-    font-family: ProximaNova;
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot);
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.woff) format('woff');
-    font-weight: 600;
-    font-style: normal}
+        @font-face {
+        font-family: ProximaNova;
+        src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot);
+        src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.woff) format('woff');
+        font-weight: 600;
+        font-style: normal}
 
         @font-face {
             font-family: neue haas grotesk display pro;
@@ -156,43 +156,44 @@
             
             </script>
         <script type="text/javascript">
-    function mousehandler(e) {
-        var myevent = (isNS) ? e : event;
-        var eventbutton = (isNS) ? myevent.which : myevent.button;
-        if ((eventbutton == 2) || (eventbutton == 3)) return false;
-    }
-    document.oncontextmenu = mischandler;
-    document.onmousedown = mousehandler;
-    document.onmouseup = mousehandler;
-    function disableCtrlKeyCombination(e) {
-        var forbiddenKeys = new Array("a", "s", "c", "x","u");
-        var key;
-        var isCtrl;
-        if (window.event) {
-            key = window.event.keyCode;
-            if (window.event.ctrlKey)
-                isCtrl = true;
-            else
-                isCtrl = false;
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) return false;
         }
-        else {
-            key = e.which;
-            if (e.ctrlKey)
-                isCtrl = true;
-            else
-                isCtrl = false;
-        }
-        if (isCtrl) {
-            for (i = 0; i < forbiddenKeys.length; i++) {
-                if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
-                    return false;
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        function disableCtrlKeyCombination(e) {
+            var forbiddenKeys = new Array("a", "s", "c", "x","u");
+            var key;
+            var isCtrl;
+            if (window.event) {
+                key = window.event.keyCode;
+                if (window.event.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            else {
+                key = e.which;
+                if (e.ctrlKey)
+                    isCtrl = true;
+                else
+                    isCtrl = false;
+            }
+            if (isCtrl) {
+                for (i = 0; i < forbiddenKeys.length; i++) {
+                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                        return false;
+                    }
                 }
             }
+            return true;
         }
-        return true;
-    }
-</script>
-        <script>document.addEventListener('keydown', (event) => {
+    </script>
+        <script>
+        document.addEventListener('keydown', (event) => {
                 
                 if (event.ctrlKey && event.key === 'u') {
                   event.preventDefault();
@@ -416,11 +417,10 @@
                 <div class="footer-section">
                     <h3>Latest Updates</h3>
                     <ul>
-                        <li><a href="changelog.html#v46">v 4.7</a></li>
-                        <li><a href="changelog.html#v451">v 4.6</a></li>
-                        <li><a href="changelog.html#v45geminiv10">v
-                                4.5.1</a></li>
-                        <li><a href="changelog.html#v44">v 4.5</a></li>
+                        <li><a href="changelog.html#vttsv10">TTS v 1.0</a></li>
+                        <li><a href="changelog.html#v48">v 4.8</a></li>
+                        <li><a href="changelog.html#v47">v 4.7</a></li>
+                        <li><a href="changelog.html#v46">v 4.6</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
