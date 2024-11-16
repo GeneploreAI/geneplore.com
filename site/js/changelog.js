@@ -1,5 +1,13 @@
 const changelogData = [
     {
+        version: "v4.8",
+        changes: [
+            "Upgraded image recognition on gpt-4o-mini",
+            "Fixed some issues with Discord not sending subscription webhooks to our bot",
+            "Assorted Bug Fixes"
+        ]
+    },
+    {
         version: "v4.7",
         changes: [
             "Added OpenAI o1-preview and o1-mini",
