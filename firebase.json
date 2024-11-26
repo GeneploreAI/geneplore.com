@@ -6,6 +6,61 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites":
+    [
+      {
+        "source": "/link",
+        "destination": "/link.html"
+      },
+      {
+        "source": "/gift",
+        "destination": "/gift.html"
+      },
+      {
+        "source": "/success",
+        "destination": "/success.html"
+      },
+      {
+        "source": "success-pre",
+        "destination": "/success-pre.html"
+      },
+      {
+        "source": "/static/hosted/bot-img/bot-logo.jpg",
+        "destination": "/static/hosted/bot-img/bot-logo.png"
+      },
+      {
+        "source": "/*",
+        "function": {
+          "functionId": "link-shortener/geneplore",
+          "region": "us-central1"
+        }
+      }
+    ],
+    "redirects":
+    [
+      {
+        "source": "/terms",
+        "destination": "https://geneplore.com/terms",
+        "type": 301
+      },
+      {
+        "source": "/",
+        "destination": "https://geneplore.com",
+        "type": 301
+      },
+      {
+        "source": "/discord",
+        "destination": "https://discord.com/invite/RsztF7QRp7",
+        "type": 301
+      },
+      {
+        "source": "/bot",
+        "destination": "https://discord.com/oauth2/authorize?client_id=1089317211652509811",
+        "type": 301
+      }
+      
     ]
   }
+
 }
