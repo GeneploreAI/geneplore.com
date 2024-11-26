@@ -31,7 +31,7 @@
       {
         "source": "/*",
         "function": {
-          "functionId": "link-shortener",
+          "functionId": "link-shortener/geneplore",
           "region": "us-central1"
         }
       }
