@@ -10,10 +10,6 @@
     "rewrites":
     [
       {
-        "source": "/gift",
-        "destination": "https://geneplo.re/gift.html"
-      },
-      {
         "source": "/success",
         "destination": "/success.html"
       },
@@ -41,6 +37,11 @@
       {
         "source": "/bot",
         "destination": "https://discord.com/oauth2/authorize?client_id=1089317211652509811",
+        "type": 301
+      },
+      {
+        "source": "/gift",
+        "destination": "https://geneplo.re/gift",
         "type": 301
       }
       
