@@ -6,9 +6,10 @@ body {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 2rem;
+    margin-top: 100px;
 }
 
 h1,
@@ -110,10 +111,6 @@ body.dark-mode .filter-btn:focus {
 body.dark-mode .filter-btn.active {
     background-color: #3b008d;
     color: white;
-}
-
-main {
-    margin-top: 100px;
 }
 
 .models-grid {
