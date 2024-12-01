@@ -8,6 +8,12 @@ body {
     background-color: #dfe6eb;
 }
 
+main {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
 .hero {
     position: relative;
     height: 110vh;

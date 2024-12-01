@@ -9,11 +9,13 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
     font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: var(--text);
+    max-width: 1440px;
+    width: 100%;
 }
 
 .app {

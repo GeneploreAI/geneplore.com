@@ -31,6 +31,8 @@ body.dark-mode ::-webkit-scrollbar {
 }
 
 .navbar {
+    max-width: 1440px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -448,6 +450,9 @@ input:checked+.slider .moon {
     background: linear-gradient(to bottom, #e8eef2, #d5dfe6);
     padding: 50px 0 20px;
     text-align: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
 }
 
 body.dark-mode .footer {
