@@ -51,7 +51,7 @@ font-style: normal
         <script type="text/javascript">
     function mousehandler(e) {
         var myevent = (isNS) ? e : event;
-        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        var eventbutton = (isNS) ? myevent.which : eventbutton;
         if ((eventbutton == 2) || (eventbutton == 3)) return false;
     }
     document.oncontextmenu = mischandler;
@@ -220,21 +220,21 @@ font-style: normal
             </div>
 
             <div class="models-grid">
-                <div id="openai-o1-mini" class="model-card premium highlight"
+                <div id="openai-o4-mini" class="model-card premium highlight"
                     data-category="chat">
-                    <img class="model-image" src="model-img/o1.png"
-                        alt="OpenAI o1">
-                    <h3 class="model-name">OpenAI o1 Mini</h3>
-                    <p class="model-description">OpenAI o1-mini</p>
+                    <img class="model-image" src="model-img/dall-e.png"
+                        alt="OpenAI o4-mini">
+                    <h3 class="model-name">OpenAI o4-mini</h3>
+                    <p class="model-description">OpenAI o4-mini</p>
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
                         Now</a>
                 </div>
-                <div id="openai-o1-preview" class="model-card premium highlight"
+                <div id="openai-o3" class="model-card premium highlight"
                     data-category="chat">
-                    <img class="model-image" src="model-img/o1.png"
-                        alt="OpenAI o1">
-                    <h3 class="model-name">OpenAI o1</h3>
-                    <p class="model-description">OpenAI o1-preview</p>
+                    <img class="model-image" src="model-img/dall-e.png"
+                        alt="OpenAI o3">
+                    <h3 class="model-name">OpenAI o3</h3>
+                    <p class="model-description">OpenAI o3</p>
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
                         Now</a>
                 </div>
@@ -258,21 +258,21 @@ font-style: normal
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
                         Now</a>
                 </div>
-                <div id="claude-3-5" class="model-card"
+                <div id="claude-3-7" class="model-card"
                     data-category="chat">
                     <img class="model-image" src="model-img/claude.png"
-                        alt="Claude 3.5">
-                    <h3 class="model-name">Claude 3.5 Sonnet</h3>
+                        alt="Claude 3.7 Sonnet">
+                    <h3 class="model-name">Claude 3.7 Sonnet</h3>
                     <p class="model-description">Anthropic's latest language
                         model</p>
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
                         Now</a>
                 </div>
-                <div id="gemini-pro-1-5" class="model-card premium"
+                <div id="gemini-pro-2-5" class="model-card premium"
                     data-category="chat">
                     <img class="model-image" src="model-img/gemini.png"
-                        alt="Gemini Pro 1.5">
-                    <h3 class="model-name">Gemini Pro 1.5</h3>
+                        alt="Gemini Pro 2.5">
+                    <h3 class="model-name">Gemini Pro 2.5</h3>
                     <p class="model-description">Google's advanced language
                         model</p>
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
@@ -339,6 +339,18 @@ font-style: normal
                     <p class="model-description">Open-source language model</p>
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
                         Now</a>
+                </div>
+                <div id="deepseek-v3" class="model-card premium highlight" data-category="chat">
+                    <img class="model-image" src="model-img/deepseek.png" alt="Deepseek v3">
+                    <h3 class="model-name">Deepseek v3</h3>
+                    <p class="model-description">Powerful publicly available AI model</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try Now</a>
+                </div>
+                <div id="deepseek-r1" class="model-card premium highlight" data-category="chat">
+                    <img class="model-image" src="model-img/deepseek.png" alt="Deepseek R1">
+                    <h3 class="model-name">Deepseek R1</h3>
+                    <p class="model-description">Powerful publicly available AI model</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try Now</a>
                 </div>
                 <div id="sdxl-v1-0" class="model-card" data-category="image">
                     <img class="model-image" src="model-img/sdxl.png"
@@ -484,6 +496,15 @@ font-style: normal
                     <a href="https://geneplo.re/discord" class="try-now-btn">Try
                         Now</a>
                 </div>
+                <div id="wavespeed-ai-21" class="model-card premium highlight"
+                    data-category="video">
+                    <img class="model-image" src="model-img/sdxl.png"
+                        alt="Wavespeed AI 2.1">
+                    <h3 class="model-name">Wavespeed AI 2.1</h3>
+                    <p class="model-description">State-of-the-art video generation model</p>
+                    <a href="https://geneplo.re/discord" class="try-now-btn">Try
+                        Now</a>
+                </div>
 
                 <div id="musicgen-melody" class="model-card"
                     data-category="music">
@@ -600,10 +621,10 @@ font-style: normal
                 <div class="footer-section">
                     <h3>Latest Updates</h3>
                     <ul>
+                        <li><a href="changelog.html#v410">v 4.10</a></li>
+                        <li><a href="changelog.html#v49">v 4.9</a></li>
                         <li><a href="changelog.html#v48">v 4.8</a></li>
                         <li><a href="changelog.html#v47">v 4.7</a></li>
-                        <li><a href="changelog.html#v46">v 4.6</a></li>
-                        <li><a href="changelog.html#v45">v 4.5</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -612,9 +633,9 @@ font-style: normal
                         <li><a href="models.html#imagen3">Imagen 3</a></li>
                         <li><a href="models.html#flux-1">Flux.1, FLux.1
                                 Pro</a></li>
-                        <li><a href="models.html#gemini-pro-1-5">Gemini 1.5
+                        <li><a href="models.html#gemini-pro-2-5">Gemini 2.5
                                 Pro</a></li>
-                        <li><a href="models.html#sd-large">Stable Diffusion large</a></li>
+                        <li><a href="models.html#wavespeed-ai-21">Wavespeed AI 2.1</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,5 +1,28 @@
 const changelogData = [
     {
+        version: "v4.10",
+        changes: [
+            "Replaced older models with GPT-4.1, o3, o4-mini",
+            "Added Share Conversation button on the third page of conversation settings"
+        ]
+    },
+    {
+        version: "v4.9",
+        changes: [
+            "Add Flux v1.1",
+            "Added Stable Diffusion 3.5",
+            "Fix some DM issues with custom personalities, lots of optimization upgrades",
+            "Added Deepseek v3 and R1, some of the most powerful publicly available AI models",
+            "Added OpenAI o3-mini, one of the most powerful reasoning models available from OpenAI",
+            "Upgraded Gemini 1.5 Flash to Gemini 2 Flash",
+            "Upgraded Mistral Medium to a newer Mistral model",
+            "Fixed issues with /settings in DMs, /image as of this morning, and o3 mini's developer requirements",
+            "Upgraded Claude 3.5 Sonnet to Claude 3.7 Sonnet, improved reasoning abilities and programming performance",
+            "Added Wavespeed AI Video Gen (more video models on the way)",
+            "Backend fixes"
+        ]
+    },
+    {
         version: "v4.8",
         changes: [
             "Upgraded image recognition on gpt-4o-mini",
