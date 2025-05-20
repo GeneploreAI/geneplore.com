@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #dae2f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    color: #6200ea;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.changelog-card {
+    background-color: #f0f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+body.dark-mode .changelog-card {
+    background-color: #212121;
+    color: #ffffff;
+}
+
+body.dark-mode .changelog-card h2 {
+    color: #ffffff;
+}
+
+.changelog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.changelog-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #6200ea;
+    border-bottom: 2px solid #6200ea;
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.changelog-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.changelog-card li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+    text-align: left;
+}
+
+.changelog-card li::before {
+    content: '•';
+    color: #6200ea;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.pagination-btn {
+    background-color: #6200ea;
+    border: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 400;
+}
+
+.pagination-btn:hover {
+    background-color: #7c4dff;
+    transform: translateY(-2px);
+}
+
+.pagination-btn:disabled {
+    background-color: #999999;
+    cursor: not-allowed;
+    transform: none;
+}
+
+body.dark-mode .pagination-btn:disabled {
+    background-color: #7c4dff;
+}
+
+#page-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+}
+
+.page-number {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.25rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 400;
+    background-color: #f1f8ff;
+    color: #333;
+}
+
+body.dark-mode .page-number {
+    background-color: #212121;
+    color: #ffffff;
+}
+
+.page-number:hover {
+    background-color: #d1c4e9;
+}
+
+.page-number.active {
+    background-color: #6200ea;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 1rem;
+    }
+
+    .changelog-card {
+        padding: 1.5rem;
+    }
+
+    .changelog-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .pagination {
+        flex-direction: column;
+    }
+
+    .pagination-btn {
+        margin: 0.5rem 0;
+    }
+
+    #page-numbers {
+        margin: 0.5rem 0;
+    }
+}
