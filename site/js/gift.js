@@ -8,7 +8,7 @@ var code;
 
 function checkGift() {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://us-central1-chatgptdiscord.cloudfunctions.net/gift-initcheck?code=" + code, true);
+    xhr.open("GET", "https://webhooks.geneplore.com/gift/init-check?code=" + code, true);
     xhr.send();
     xhr.onreadystatechange = function () {
         if (xhr.readyState != 4) {
@@ -24,7 +24,7 @@ function checkGift() {
 function redeem() {
     document.getElementById("mutableTitle").innerHTML = "Redeeming...";
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://us-central1-chatgptdiscord.cloudfunctions.net/gift-redeem?gcode=" + code + "&code=" + urlParams.get('code'), true);
+    xhr.open("GET", "https://webhooks.geneplore.com/gift/redeem?gcode=" + code + "&code=" + urlParams.get('code'), true);
     xhr.send();
     xhr.onreadystatechange = function () {
         if (xhr.readyState != 4) {
