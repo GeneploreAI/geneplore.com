@@ -56,7 +56,7 @@ const changelogData = [
     {
         version: "v4.8",
         changes: [
-            "Upgraded image recognition on gpt-4o-mini",
+            "Upgraded image recognition on gpt-5-mini",
             "Fixed some issues with Discord not sending subscription webhooks to our bot",
             "Assorted Bug Fixes"
         ]
@@ -96,7 +96,7 @@ const changelogData = [
         changes: [
             "Introduced XP Leveling system with rewards",
             "Fixed /settings in normal channels",
-            "Upgraded ChatGPT to gpt-4o-mini",
+            "Upgraded ChatGPT to gpt-5-mini",
             "Removed /assistant command"
         ]
     },
@@ -134,7 +134,7 @@ const changelogData = [
             "Introduced /home command for chat management",
             "Added User Default Settings",
             "Enabled chat import from OpenAI",
-            "Added new chat models (GPT-4o, Claude 3 Opus, Cohere, etc.)",
+            "Added new chat models (GPT-5, Claude 3 Opus, Cohere, etc.)",
             "Reintroduced Video Generation feature",
             "Added Stable Diffusion 3 and Turbo models",
             "Numerous bug fixes and performance improvements",

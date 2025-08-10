@@ -26,43 +26,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const darkModeToggleNavbar = document.getElementById('darkModeToggleNavbar');
-    const darkModeToggleOffcanvas = document.getElementById('darkModeToggleOffcanvas');
-
-    // --- Load dark mode preference ---
-    const darkModePref = localStorage.getItem('darkMode');
-    if (darkModePref === 'enabled') {
-        document.body.classList.add('dark-mode');
-        if (darkModeToggleNavbar) darkModeToggleNavbar.checked = true;
-        if (darkModeToggleOffcanvas) darkModeToggleOffcanvas.checked = true;
-    } else {
-        document.body.classList.remove('dark-mode');
-        if (darkModeToggleNavbar) darkModeToggleNavbar.checked = false;
-        if (darkModeToggleOffcanvas) darkModeToggleOffcanvas.checked = false;
-    }
-
-    function setDarkMode(enabled) {
-        if (enabled) {
-            document.body.classList.add('dark-mode');
-            localStorage.setItem('darkMode', 'enabled');
-            if (darkModeToggleNavbar) darkModeToggleNavbar.checked = true;
-            if (darkModeToggleOffcanvas) darkModeToggleOffcanvas.checked = true;
-        } else {
-            document.body.classList.remove('dark-mode');
-            localStorage.setItem('darkMode', 'disabled');
-            if (darkModeToggleNavbar) darkModeToggleNavbar.checked = false;
-            if (darkModeToggleOffcanvas) darkModeToggleOffcanvas.checked = false;
-        }
-    }
-
-    function toggleDarkMode() {
-        setDarkMode(!document.body.classList.contains('dark-mode'));
-    }
-
-    if (darkModeToggleNavbar) {
-        darkModeToggleNavbar.addEventListener('change', toggleDarkMode);
-    }
-    if (darkModeToggleOffcanvas) {
-        darkModeToggleOffcanvas.addEventListener('change', toggleDarkMode);
-    }
+    // Dark mode functionality has been removed
 });
