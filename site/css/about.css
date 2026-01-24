@@ -12,7 +12,7 @@ body {
 }
 
 .about-hero {
-    max-width: 100%;
+    max-width: 1440px;
     margin-top: 50px;
     padding: 3rem 1rem;
     display: flex;
@@ -42,9 +42,7 @@ body {
     color: #3c3c3c;
 }
 
-body.dark-mode .about-hero__title {
-    color: #ffffff;
-}
+
 
 .about-hero__text {
     margin-bottom: 1.5rem;
@@ -55,9 +53,7 @@ body.dark-mode .about-hero__title {
     max-width: 500px;
 }
 
-body.dark-mode .about-hero__text {
-    color: #ffffff;
-}
+
 
 .about-hero__cta {
     display: inline-block;
@@ -82,9 +78,7 @@ hr {
     margin: 0;
 }
 
-body.dark-mode hr {
-    border-color: #ffffff;
-}
+
 
 @media (max-width: 768px) {
     .about-hero {
@@ -189,14 +183,9 @@ body.dark-mode hr {
     color: #ffffff;
 }
 
-body.dark-mode .about-section__text,
-body.dark-mode .about-section__title {
-    color: #ffffff;
-}
 
-body.dark-mode .about-hero {
-    background-color: #050505;
-}
+
+
 
 @media (max-width: 600px) {
     .jumbotron-title {

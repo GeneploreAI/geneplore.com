@@ -29,14 +29,9 @@ h1 {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-body.dark-mode .changelog-card {
-    background-color: #212121;
-    color: #ffffff;
-}
 
-body.dark-mode .changelog-card h2 {
-    color: #ffffff;
-}
+
+
 
 .changelog-card:hover {
     transform: translateY(-5px);
@@ -108,9 +103,7 @@ body.dark-mode .changelog-card h2 {
     transform: none;
 }
 
-body.dark-mode .pagination-btn:disabled {
-    background-color: #7c4dff;
-}
+
 
 #page-numbers {
     display: flex;
@@ -135,10 +128,7 @@ body.dark-mode .pagination-btn:disabled {
     color: #333;
 }
 
-body.dark-mode .page-number {
-    background-color: #212121;
-    color: #ffffff;
-}
+
 
 .page-number:hover {
     background-color: #d1c4e9;

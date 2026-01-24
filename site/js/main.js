@@ -1,32 +1,32 @@
- document.addEventListener('DOMContentLoaded', () => {
-  const slides = document.querySelectorAll('.slide');
-  const dots = document.querySelector('.dots');
-  const prev = document.querySelector('.prev');
-  const next = document.querySelector('.next');
-  let currentSlide = 0;
+//  document.addEventListener('DOMContentLoaded', () => {
+//   const slides = document.querySelectorAll('.slide');
+//   const dots = document.querySelector('.dots');
+//   const prev = document.querySelector('.prev');
+//   const next = document.querySelector('.next');
+//   let currentSlide = 0;
 
-  slides.forEach((_, index) => {
-    const dot = document.createElement('div');
-    dot.classList.add('dot');
-    if (index === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goToSlide(index));
-    dots.appendChild(dot);
-  });
+//   slides.forEach((_, index) => {
+//     const dot = document.createElement('div');
+//     dot.classList.add('dot');
+//     if (index === 0) dot.classList.add('active');
+//     dot.addEventListener('click', () => goToSlide(index));
+//     dots.appendChild(dot);
+//   });
 
-  function setupSlideshow() {
-    const slideshow = document.querySelector('.slideshow');
-    const slides = slideshow.querySelectorAll('.slide');
-    let currentIndex = 0;
+//   function setupSlideshow() {
+//     const slideshow = document.querySelector('.slideshow');
+//     const slides = slideshow.querySelectorAll('.slide');
+//     let currentIndex = 0;
 
-    function showNextSlide() {
-        slides[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % slides.length;
-        slides[currentIndex].classList.add('active');
-    }
+//     function showNextSlide() {
+//         slides[currentIndex].classList.remove('active');
+//         currentIndex = (currentIndex + 1) % slides.length;
+//         slides[currentIndex].classList.add('active');
+//     }
 
 
-    setInterval(showNextSlide, 5000);
-}
+//     setInterval(showNextSlide, 5000);
+// }
 
 document.addEventListener('DOMContentLoaded', setupSlideshow);
 
@@ -65,7 +65,6 @@ document.addEventListener('DOMContentLoaded', setupSlideshow);
   prevButton.addEventListener('click', prevSlide);
 
   setInterval(nextSlide, 5000);
-});
 
 document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.animate-on-scroll');

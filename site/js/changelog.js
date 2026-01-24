@@ -1,5 +1,36 @@
 const changelogData = [
     {
+        version: "4.11.1",
+        changes: ["Bug fixes"]
+    },
+    {
+        version: "4.11",
+        changes: ["[BETA] Added /genemoji emoji generator - this allows you to generate any emoji for any occasion.",
+            "If you subscribe to Discord Nitro you can add it to an emoji-only server for use in any server (see below)",
+
+            "Errors are now way more readable - the bot should tell you what went wrong and how to fix it in most cases. It will also provide a link to this server to get support",
+
+            "XP Optimizations for faster bot use in this server"]
+    },
+    {
+        version: "4.10.3",
+        changes: [
+            "All-new Gemini 2.5 Pro is here! Access it just like you would normal Gemini."
+        ]
+    },
+    {
+        version: "4.10.2",
+        changes: [
+            "GPT Image Gen can now generate landscape and portrait pictures"
+        ]
+    },
+    {
+        version: "4.10.1",
+        changes: [
+            "Added new GPT Image Generation"
+        ]
+    },
+    {
         version: "v4.10",
         changes: [
             "Replaced older models with GPT-4.1, o3, o4-mini",
@@ -25,7 +56,7 @@ const changelogData = [
     {
         version: "v4.8",
         changes: [
-            "Upgraded image recognition on gpt-4o-mini",
+            "Upgraded image recognition on gpt-5-mini",
             "Fixed some issues with Discord not sending subscription webhooks to our bot",
             "Assorted Bug Fixes"
         ]
@@ -65,7 +96,7 @@ const changelogData = [
         changes: [
             "Introduced XP Leveling system with rewards",
             "Fixed /settings in normal channels",
-            "Upgraded ChatGPT to gpt-4o-mini",
+            "Upgraded ChatGPT to gpt-5-mini",
             "Removed /assistant command"
         ]
     },
@@ -103,7 +134,7 @@ const changelogData = [
             "Introduced /home command for chat management",
             "Added User Default Settings",
             "Enabled chat import from OpenAI",
-            "Added new chat models (GPT-4o, Claude 3 Opus, Cohere, etc.)",
+            "Added new chat models (GPT-5, Claude 3 Opus, Cohere, etc.)",
             "Reintroduced Video Generation feature",
             "Added Stable Diffusion 3 and Turbo models",
             "Numerous bug fixes and performance improvements",

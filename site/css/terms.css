@@ -13,13 +13,10 @@ body {
     padding: 0;
 }
 
-body.dark-mode {
-    background-color: #1a1a1a;
-    color: #f8f9fa;
-}
+
 
 .container {
-    max-width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -35,12 +32,11 @@ body.dark-mode {
     background: linear-gradient(to bottom right, #ababab, #989898);
     color: #fff;
     padding: 60px 0;
+    width: 100%;
     text-align: center;
 }
 
-body.dark-mode .tos-header {
-    background: linear-gradient(to bottom right, #2a2a2a, #333);
-}
+
 
 .tos-header h1 {
     font-family: 'Poppins', sans-serif;
@@ -87,10 +83,7 @@ body.dark-mode .tos-header {
     align-self: flex-start;
 }
 
-body.dark-mode .tos-nav {
-    background-color: #2a2a2a;
-    border-right: 1px solid #333;
-}
+
 
 .tos-nav ul {
     list-style-type: none;
@@ -102,10 +95,7 @@ body.dark-mode .tos-nav {
     padding: 40px;
 }
 
-body.dark-mode .tos-nav ul {
-    background-color: #2a2a2a;
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
-}
+
 
 .tos-nav li {
     border-bottom: 1px solid #eee;
@@ -132,11 +122,7 @@ body.dark-mode .tos-nav ul {
     color: #a21eb4;
 }
 
-body.dark-mode .tos-nav a:hover,
-body.dark-mode .tos-nav a.active {
-    background-color: #333;
-    color: #f8f9fa;
-}
+
 
 .tos-sections {
     flex: 1;
@@ -157,9 +143,7 @@ body.dark-mode .tos-nav a.active {
     color: #555;
 }
 
-body.dark-mode .tos-sections p {
-    color: #ccc;
-}
+
 
 .tos-sections ul {
     font-size: 1.3rem;
@@ -174,28 +158,16 @@ body.dark-mode .tos-sections p {
     transition: color 0.3s ease;
 }
 
-body.dark-mode .tos-sections a {
-    color: #f8f9fa;
-}
+
 
 .tos-sections a:hover {
     color: #8a19a0;
 }
 
-body.dark-mode .tos-sections a:hover {
-    color: #f8f9fa;
-}
 
-.tos-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+
+footer {
     margin-top: 40px;
-}
-
-body.dark-mode .tos-footer {
-    background-color: #2a2a2a;
 }
 
 @media (max-width: 768px) {
@@ -230,9 +202,7 @@ body.dark-mode .tos-footer {
     color: #555;
 }
 
-body.dark-mode .accordion-content ul li {
-    color: #f6f6f6;
-}
+
 
 .accordion-header {
     display: flex;
@@ -304,14 +274,7 @@ body.dark-mode .accordion-content ul li {
     max-height: 1000px;
 }
 
-body.dark-mode .accordion-item {
-    background-color: #2a2a2a;
-}
 
-body.dark-mode .accordion-header {
-    background-color: #2a2a2a;
-}
 
-body.dark-mode .accordion-header:hover {
-    background-color: #333;
-}
+
+
