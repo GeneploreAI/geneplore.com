@@ -7,8 +7,7 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "rewrites":
-    [
+    "rewrites": [
       {
         "source": "/static/hosted/bot-img/bot-logo.jpg",
         "destination": "/static/hosted/bot-img/bot-logo.png"
@@ -42,8 +41,7 @@
         "destination": "/features.html"
       }
     ],
-    "redirects":
-    [
+    "redirects": [
       {
         "source": "/discord",
         "destination": "https://discord.com/invite/RsztF7QRp7",
@@ -59,8 +57,6 @@
         "destination": "https://geneplo.re/gift",
         "type": 301
       }
-      
     ]
   }
-
 }
