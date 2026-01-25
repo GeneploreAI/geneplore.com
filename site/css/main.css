@@ -1188,107 +1188,154 @@ input:checked+.slider .moon {
 
 .footer {
     background: linear-gradient(to bottom, #e8eef2, #d5dfe6);
-    padding: 50px 0 20px;
-    text-align: center;
+    padding: 60px 0 30px;
+    width: 100%;
 }
 
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
 
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    margin-bottom: 50px;
+    align-items: start;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
 
 .footer-logo img {
-    max-height: 50px;
+    max-height: 55px;
     max-width: 100%;
     height: auto;
     width: auto;
-    margin-bottom: 30px;
-    padding: 3px;
 }
 
-
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 0 30px;
-    column-gap: 50px;
-}
-
-.footer-section {
-    flex: 1;
-    min-width: 200px;
-    margin: 0 15px 20px;
+.footer-description {
     text-align: left;
 }
 
 .footer-title {
     font-family: 'ProximaNova-Bold', sans-serif;
-    font-size: 2.1rem;
-    margin-bottom: 30px;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
     color: #222;
+    line-height: 1.2;
+}
+
+.footer-description p {
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.footer-links-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.footer-section {
+    text-align: left;
 }
 
 .footer-section h3 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-family: 'ProximaNova-Bold', sans-serif;
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 1.4rem;
+    color: #222;
+    font-weight: 600;
 }
 
 .footer-section ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-family: 'Poppins', sans-serif;
 }
 
 .footer-section a {
-    color: #626262;
-    transition: color 0.3s ease;
+    color: #555;
+    transition: all 0.3s ease;
     font-family: 'Poppins', sans-serif;
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    position: relative;
 }
 
-.footer-section p {
-    color: #626262;
-    font-family: 'Poppins', sans-serif;
+.footer-section a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #a21eb4;
+    transition: width 0.3s ease;
 }
-
-
-
-
 
 .footer-section a:hover {
     color: #a21eb4;
+    transform: translateX(5px);
+}
+
+.footer-section a:hover::after {
+    width: 100%;
+}
+
+.footer-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 25px;
 }
 
 .climate-card {
     display: flex;
     align-items: center;
     background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 1px 4px rgba(60, 60, 60, 0.06);
-    padding: 8px 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(60, 60, 60, 0.08);
+    padding: 12px 24px;
     font-size: 1rem;
     font-family: "DM sans";
     color: #444;
-    margin: 15px;
-    gap: 8px;
-    width: fit-content;
+    gap: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.climate-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(60, 60, 60, 0.12);
 }
 
 .climate-card a {
     color: #19b47c;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-
-
 .climate-card a:hover {
-    text-decoration: underline;
+    color: #128a5e;
 }
 
 .climate-icon {
@@ -1297,36 +1344,54 @@ input:checked+.slider .moon {
     margin-left: 6px;
 }
 
-
-
-.footer-social hr {
-    width: 80%;
-    margin: 20px auto;
-    border: none;
-    border-top: 1px solid #ffffff;
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
 }
 
-.footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #777;
+.footer-bottom p {
+    font-size: 0.95rem;
+    color: #666;
     font-family: 'Poppins', sans-serif;
 }
 
+@media (max-width: 1024px) {
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-links-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
+    .footer-container {
+        padding: 0 25px;
+    }
+
+    .footer-top {
+        gap: 35px;
+    }
+
+    .footer-title {
+        font-size: 1.8rem;
+    }
+
+    .footer-links-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .footer-section {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 30px;
+        text-align: left;
     }
 
-    .footer-social hr {
-        width: 90%;
+    .climate-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 20px;
     }
 }
 
