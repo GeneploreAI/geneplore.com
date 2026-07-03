@@ -3,104 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us - Geneplore</title>
+        <title>About Us — Geneplore AI</title>
+        <meta name="description" content="Learn about Geneplore AI — the team building the easiest way to use AI with your community on Discord and other chat platforms.">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#dfe6eb">
+        <link rel="canonical" href="https://geneplore.com/about.html">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Geneplore AI">
+        <meta property="og:title" content="About Us — Geneplore AI">
+        <meta property="og:description" content="Learn about Geneplore AI — the team building the easiest way to use AI with your community.">
+        <meta property="og:url" content="https://geneplore.com/about.html">
+        <meta property="og:image" content="https://geneplore.com/img/banner.png">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@geneplore">
+        <link rel="shortcut icon" href="img/geneplore_color_logo_circular.png" type="image/x-icon">
         <link rel="stylesheet" href="css/about.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
             rel="stylesheet">
-        <link
-            href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600&f[]=satoshi@700,500,400&display=swap"
-            rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;700&display=swap"
-            rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <link
-            rel="stylesheet"
-            href>
-        <link rel="shortcut icon" href="img/geneplore_color_logo_circular.png"
-            type="image/x-icon">
-        <style>
-                @font-face {
-    font-family: ProximaNova;
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot);
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.woff) format('woff');
-    font-weight: 400;
-    font-style: normal
-}
-
-@font-face {
-    font-family: ProximaNova;
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot);
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.woff) format('woff');
-    font-weight: 600;
-    font-style: normal
-}
-            </style>
-        <script language=JavaScript>            
-                function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
-                
-                if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
-                
-                document.onmousedown = rtclickcheck;
-                
-                </script>
-        <script type="text/javascript">
-        function mousehandler(e) {
-            var myevent = (isNS) ? e : event;
-            var eventbutton = (isNS) ? myevent.which : myevent.button;
-            if ((eventbutton == 2) || (eventbutton == 3)) return false;
-        }
-        document.oncontextmenu = mischandler;
-        document.onmousedown = mousehandler;
-        document.onmouseup = mousehandler;
-        function disableCtrlKeyCombination(e) {
-            var forbiddenKeys = new Array("a", "s", "c", "x","u");
-            var key;
-            var isCtrl;
-            if (window.event) {
-                key = window.event.keyCode;
-                if (window.event.ctrlKey)
-                    isCtrl = true;
-                else
-                    isCtrl = false;
-            }
-            else {
-                key = e.which;
-                if (e.ctrlKey)
-                    isCtrl = true;
-                else
-                    isCtrl = false;
-            }
-            if (isCtrl) {
-                for (i = 0; i < forbiddenKeys.length; i++) {
-                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
-                        return false;
-                    }
-                }
-            }
-            return true;
-        }
-    </script>
-                <script>document.addEventListener('keydown', (event) => {
-                
-                    if (event.ctrlKey && event.key === 'u') {
-                      event.preventDefault();
-                      alert('Viewing source code is disabled.');
-                    }
-    
-                    if (event.ctrlKey && event.shiftKey && event.key === 'I') {
-                      event.preventDefault();
-                      alert('Opening developer tools is disabled.');
-                    }
-                  });</script>
     </head>
-    <body oncontextmenu="return false">
+    <body>
         <header>
             <nav class="navbar">
                 <a href="index.html" class="logo">
@@ -258,60 +183,55 @@
                 </section>
             </main>
             <hr>
-            <footer class="footer">
-                <div class="footer-logo">
-                    <img src="img/geneplore.png" alt="Geneplore Logo">
-                </div>
-                <div class="footer-content">
-                    <div class="footer-section">
-                        <h2 class="footer-title">Explore the world of AI</h2>
-                        <p>Geneplore is an AI-powered creative platform that
-                            helps
-                            you unleash your imagination.</p>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="img/geneplore.png" alt="Geneplore Logo">
+                        </div>
+                        <div class="footer-description">
+                            <h2 class="footer-title">Explore the world of AI</h2>
+                            <p>Geneplore AI is building the easiest way to use AI with your community.</p>
+                        </div>
                     </div>
-                    <div class="footer-section">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="terms.html">Terms of Service</a></li>
-                            <li><a
-                                    href="features.html">Features</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Latest Updates</h3>
+
+                    <div class="footer-links-wrapper">
+                        <div class="footer-section">
+                            <h3>Quick Links</h3>
                             <ul>
-                                <li><a href="changelog.html#v410">v 4.10</a></li>
-                                <li><a href="changelog.html#v49">v 4.9</a></li>
-                                <li><a href="changelog.html#v48">v 4.8</a></li>
-                                <li><a href="changelog.html#v47">v 4.7</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="features.html">Features</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="terms.html">Terms & Privacy</a></li>
                             </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h3>Latest Models</h3>
-                        <ul>
-                            <li><a href="models.html#imagen3">Imagen 3</a></li>
-                            <li><a href="models.html#flux-1">Flux.1, FLux.1
-                                    Pro</a></li>
-                            <li><a href="models.html#gemini-pro-2-5">Gemini 2.5
-                                    Pro</a></li>
-                            <li><a href="models.html#wavespeed-ai-21">Wavespeed AI 2.1</a></li>
-                        </ul>
+                        </div>
+
+                        <div class="footer-section">
+                            <h3>Geneplore Labs</h3>
+                            <ul>
+                                <li><a href="https://gibberifier.com">Gibberifier</a></li>
+                                <li><a href="https://github.com/GeneploreAI/tts-bot">TTS Bot</a></li>
+                                <li><a href="https://geneplo.re/gemini">Genie AI</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            <div class="footer-social">
-                <div class="climate-card">
-    <span>1% of purchases contributed to <a href="https://stripe.com/climate" target="_blank">Stripe Climate</a></span>
-    <span class="climate-icon">
-        <!-- Add your image or SVG here -->
-        <img src="img/stripe.png" alt="Stripe Climate" style="height: 20px;">
-    </span>
-</div>
+
+                <div class="footer-divider">
+                    <div class="climate-card">
+                        <span>1% of purchases contributed to <a href="https://stripe.com/climate" target="_blank">Stripe Climate</a></span>
+                        <span class="climate-icon">
+                            <img src="img/stripe.png" alt="Stripe Climate" style="height: 20px;">
+                        </span>
+                    </div>
+                </div>
+
                 <div class="footer-bottom">
                     <p>&copy; 2024 Geneplore. All rights reserved.</p>
                 </div>
-            </footer>
+            </div>
+        </footer>
             <script src="js/main.js"></script>
             <script src="js/navbar.js"></script>
             <script src="js/about.js"></script>
