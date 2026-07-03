@@ -1,40 +1,37 @@
-//  document.addEventListener('DOMContentLoaded', () => {
-//   const slides = document.querySelectorAll('.slide');
-//   const dots = document.querySelector('.dots');
-//   const prev = document.querySelector('.prev');
-//   const next = document.querySelector('.next');
-//   let currentSlide = 0;
+document.addEventListener('DOMContentLoaded', () => {
+  setupSlideshow();
+  setupCarousel();
+  setupScrollAnimations();
+});
 
-//   slides.forEach((_, index) => {
-//     const dot = document.createElement('div');
-//     dot.classList.add('dot');
-//     if (index === 0) dot.classList.add('active');
-//     dot.addEventListener('click', () => goToSlide(index));
-//     dots.appendChild(dot);
-//   });
+function setupSlideshow() {
+  const slideshow = document.querySelector('.slideshow');
+  if (!slideshow) return;
 
-//   function setupSlideshow() {
-//     const slideshow = document.querySelector('.slideshow');
-//     const slides = slideshow.querySelectorAll('.slide');
-//     let currentIndex = 0;
+  const slides = slideshow.querySelectorAll('.slide');
+  if (!slides.length) return;
 
-//     function showNextSlide() {
-//         slides[currentIndex].classList.remove('active');
-//         currentIndex = (currentIndex + 1) % slides.length;
-//         slides[currentIndex].classList.add('active');
-//     }
+  let currentIndex = 0;
 
+  function showNextSlide() {
+    slides[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add('active');
+  }
 
-//     setInterval(showNextSlide, 5000);
-// }
+  setInterval(showNextSlide, 5000);
+}
 
-document.addEventListener('DOMContentLoaded', setupSlideshow);
-
+function setupCarousel() {
   const carousel = document.querySelector('.carousel');
+  if (!carousel) return;
+
   const items = carousel.querySelectorAll('.carousel-item');
   const prevButton = document.querySelector('.carousel-button.prev');
   const nextButton = document.querySelector('.carousel-button.next');
   const dotsContainer = document.querySelector('.carousel-dots');
+  if (!items.length || !prevButton || !nextButton || !dotsContainer) return;
+
   let currentIndex = 0;
 
   items.forEach((_, index) => {
@@ -65,8 +62,9 @@ document.addEventListener('DOMContentLoaded', setupSlideshow);
   prevButton.addEventListener('click', prevSlide);
 
   setInterval(nextSlide, 5000);
+}
 
-document.addEventListener('DOMContentLoaded', () => {
+function setupScrollAnimations() {
   const sections = document.querySelectorAll('.animate-on-scroll');
   const stats = document.querySelectorAll('.stat-number');
 
@@ -119,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         requestAnimationFrame(updateCount);
       } else {
         if (needsPlus) {
-          element.textContent = (target === 50000 ? target : target.toLocaleString()) + '+';
+          element.textContent = target.toLocaleString() + '+';
         } else if (isPercentage) {
           element.textContent = target + '%';
         } else {
@@ -130,64 +128,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateCount();
   }
-});
-
-function setupSlideshow() {
-    const slideshow = document.querySelector('.slideshow');
-    const slides = slideshow.querySelectorAll('.slide');
-    let currentIndex = 0;
-
-    function showNextSlide() {
-        slides[currentIndex].classList.remove('active');
-        currentIndex = (currentIndex + 1) % slides.length;
-        slides[currentIndex].classList.add('active');
-    }
-
-    setInterval(showNextSlide, 5000);
 }
-
-document.addEventListener('DOMContentLoaded', setupSlideshow);
-
-function setupCarousel() {
-    const carousel = document.querySelector('.carousel');
-    const items = carousel.querySelectorAll('.carousel-item');
-    const prevButton = document.querySelector('.carousel-button.prev');
-    const nextButton = document.querySelector('.carousel-button.next');
-    const dotsContainer = document.querySelector('.carousel-dots');
-    let currentIndex = 0;
-
-    items.forEach((_, index) => {
-        const dot = document.createElement('div');
-        dot.classList.add('dot');
-        if (index === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => goToSlide(index));
-        dotsContainer.appendChild(dot);
-    });
-
-    function goToSlide(index) {
-        items[currentIndex].classList.remove('active');
-        dotsContainer.children[currentIndex].classList.remove('active');
-        currentIndex = index;
-        items[currentIndex].classList.add('active');
-        dotsContainer.children[currentIndex].classList.add('active');
-    }
-
-    function nextSlide() {
-        goToSlide((currentIndex + 1) % items.length);
-    }
-
-    function prevSlide() {
-        goToSlide((currentIndex - 1 + items.length) % items.length);
-    }
-
-    nextButton.addEventListener('click', nextSlide);
-    prevButton.addEventListener('click', prevSlide);
-
-    // Auto-rotate every 5 seconds
-    setInterval(nextSlide, 5000);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    setupSlideshow();
-    setupCarousel();
-});

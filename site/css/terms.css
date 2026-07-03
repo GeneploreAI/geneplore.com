@@ -5,10 +5,9 @@
 }
 
 body {
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'DM Sans', 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #e9f4ff;
+    color: var(--text);
     margin: 0;
     padding: 0;
 }
@@ -29,7 +28,7 @@ body {
 }
 
 .tos-header {
-    background: linear-gradient(to bottom right, #ababab, #989898);
+    background: linear-gradient(135deg, var(--ink) 30%, var(--accent-dark));
     color: #fff;
     padding: 60px 0;
     width: 100%;
@@ -42,16 +41,17 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-weight: 700;
+    letter-spacing: -0.02em;
     margin-bottom: 10px;
 }
 
-.nav-links a {
+.tos-header .nav-links a {
     color: white;
     font-size: 1.2rem;
 }
 
-.nav-links a:hover {
-    color: #a21eb4;
+.tos-header .nav-links a:hover {
+    color: #e6a8f0;
 }
 
 .container a img {
@@ -74,8 +74,6 @@ body {
 }
 
 .tos-nav {
-    background-color: #f5f5f5;
-    border-right: 1px solid #e0e0e0;
     top: 20px;
     height: 10%;
     position: sticky;
@@ -89,9 +87,10 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--surface);
+    border: 1px solid rgba(24, 25, 45, 0.05);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
     padding: 40px;
 }
 
@@ -109,17 +108,17 @@ body {
 .tos-nav a {
     display: block;
     padding: 10px 12px;
-    color: #333;
+    color: var(--text);
     text-decoration: none;
     font-size: 1.2rem;
-    border-radius: 4px;
+    border-radius: 8px;
     transition: background-color 0.2s;
 }
 
 .tos-nav a:hover,
 .tos-nav a.active {
-    background-color: #e0e0e0;
-    color: #a21eb4;
+    background-color: #f6ecfa;
+    color: var(--accent);
 }
 
 
@@ -133,14 +132,14 @@ body {
 .tos-sections h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
-    color: #a21eb4;
+    color: var(--accent);
     margin-bottom: 20px;
 }
 
 .tos-sections p {
     font-size: 1.3rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--muted);
 }
 
 
@@ -148,12 +147,12 @@ body {
 .tos-sections ul {
     font-size: 1.3rem;
     line-height: 1.8;
-    color: #555;
+    color: var(--muted);
     margin-left: 20px;
 }
 
 .tos-sections a {
-    color: #a21eb4;
+    color: var(--accent);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -161,7 +160,7 @@ body {
 
 
 .tos-sections a:hover {
-    color: #8a19a0;
+    color: var(--accent-dark);
 }
 
 
@@ -191,15 +190,16 @@ footer {
 }
 
 .accordion-item {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--surface);
+    border: 1px solid rgba(24, 25, 45, 0.05);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
     margin-bottom: 20px;
     overflow: hidden;
 }
 
 .accordion-content ul li {
-    color: #555;
+    color: var(--muted);
 }
 
 
@@ -210,7 +210,7 @@ footer {
     align-items: center;
     width: 100%;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--surface);
     border: none;
     text-align: left;
     cursor: pointer;
@@ -218,13 +218,13 @@ footer {
 }
 
 .accordion-header:hover {
-    background-color: #f0f0f0;
+    background-color: #f6ecfa;
 }
 
 .accordion-header h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
-    color: #a21eb4;
+    color: var(--accent);
     margin: 0;
 }
 
@@ -238,7 +238,7 @@ footer {
 .accordion-icon::after {
     content: '';
     position: absolute;
-    background-color: #a21eb4;
+    background-color: var(--accent);
     transition: transform 0.3s ease;
 }
 

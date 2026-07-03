@@ -3,216 +3,52 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Geneplore AI — AI Chat, Image &amp; Video Generation on Discord</title>
+        <meta name="description" content="Geneplore AI connects global users with AI on Discord. Chat with cutting-edge models, generate images with FLUX.1 and SDXL, and create videos — together with your community.">
+        <meta name="keywords" content="Geneplore AI, Discord AI bot, AI chat, AI image generation, AI video generation, FLUX.1, SDXL, GPT-5, Claude">
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#dfe6eb">
+        <link rel="canonical" href="https://geneplore.com/">
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Geneplore AI">
+        <meta property="og:title" content="Geneplore AI — AI Chat, Image &amp; Video Generation on Discord">
+        <meta property="og:description" content="Connecting global users with AI on the most popular community chat platforms. Chat, generate images, and create videos with your community on Discord.">
+        <meta property="og:url" content="https://geneplore.com/">
+        <meta property="og:image" content="https://geneplore.com/img/banner.png">
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@geneplore">
+        <meta name="twitter:title" content="Geneplore AI — AI Chat, Image &amp; Video Generation on Discord">
+        <meta name="twitter:description" content="Connecting global users with AI on the most popular community chat platforms.">
+        <meta name="twitter:image" content="https://geneplore.com/img/banner.png">
+
+        <link rel="shortcut icon" href="img/geneplore_color_logo_circular.png" type="image/x-icon">
         <link rel="stylesheet" href="css/main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap"
             rel="stylesheet">
-        <link
-            href="https://api.fontshare.com/v2/css?f[]=clash-display@700,600&f[]=satoshi@700,500,400&display=swap"
-            rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;700&display=swap"
-            rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet">
-        <link
-            rel="stylesheet"
-            href>
-        <link rel="shortcut icon" href="img/geneplore_color_logo_circular.png"
-            type="image/x-icon">
-        <style>
-                @font-face {
-    font-family: ProximaNova;
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot);
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-regular-webfont-webfont.woff) format('woff');
-    font-weight: 400;
-    font-style: normal
-}
 
-@font-face {
-    font-family: ProximaNova;
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot);
-    src: url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.eot?#iefix) format('embedded-opentype'), url(https://cdn.auth0.com/fonts/proxima-nova/proximanova-semibold-webfont-webfont.woff) format('woff');
-    font-weight: 600;
-    font-style: normal
-}
-            </style>
-        <script language=JavaScript>            
-                        function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
-                        
-                        if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
-                        
-                        document.onmousedown = rtclickcheck;
-                        
-                        </script>
-        <script type="text/javascript">
-                function mousehandler(e) {
-                    var myevent = (isNS) ? e : event;
-                    var eventbutton = (isNS) ? myevent.which : myevent.button;
-                    if ((eventbutton == 2) || (eventbutton == 3)) return false;
-                }
-                document.oncontextmenu = mischandler;
-                document.onmousedown = mousehandler;
-                document.onmouseup = mousehandler;
-                function disableCtrlKeyCombination(e) {
-                    var forbiddenKeys = new Array("a", "s", "c", "x","u");
-                    var key;
-                    var isCtrl;
-                    if (window.event) {
-                        key = window.event.keyCode;
-                        if (window.event.ctrlKey)
-                            isCtrl = true;
-                        else
-                            isCtrl = false;
-                    }
-                    else {
-                        key = e.which;
-                        if (e.ctrlKey)
-                            isCtrl = true;
-                        else
-                            isCtrl = false;
-                    }
-                    if (isCtrl) {
-                        for (i = 0; i < forbiddenKeys.length; i++) {
-                            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
-                                return false;
-                            }
-                        }
-                    }
-                    return true;
-                }
-            </script>
-        <!-- <script>document.addEventListener('keydown', (event) => {
-                
-                if (event.ctrlKey && event.key === 'u') {
-                  event.preventDefault();
-                  alert('Viewing source code is disabled.');
-                }
-
-                if (event.ctrlKey && event.shiftKey && event.key === 'I') {
-                  event.preventDefault();
-                  alert('Opening developer tools is disabled.');
-                }
-              });</script> -->
-        <style>
-                        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: normal;
-            font-weight: 400;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayLight.woff) format('woff')
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Geneplore AI",
+            "url": "https://geneplore.com/",
+            "logo": "https://geneplore.com/img/geneplore_color_logo_circular.png",
+            "description": "Geneplore AI is building the easiest way to use AI with your community, connecting global users with AI on the most popular community chat platforms.",
+            "sameAs": [
+                "https://x.com/geneplore",
+                "https://youtube.com/@geneplore"
+            ]
         }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: italic;
-            font-weight: 400;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayLightItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: normal;
-            font-weight: 100;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXXThin.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: italic;
-            font-weight: 100;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXXThinItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: normal;
-            font-weight: 200;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXThin.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: italic;
-            font-weight: 200;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayXThinItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: normal;
-            font-weight: 300;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayThin.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: italic;
-            font-weight: 300;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayThinItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: normal;
-            font-weight: 500;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayRoman.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: italic;
-            font-weight: 500;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayRomanItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: normal;
-            font-weight: 600;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayMediu.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: italic;
-            font-weight: 600;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayMediumItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: normal;
-            font-weight: 700;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBold.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: italic;
-            font-weight: 700;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBoldItalic.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: normal;
-            font-weight: 900;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBlack.woff) format('woff')
-        }
-
-        @font-face {
-            font-family: neue haas grotesk display pro;
-            font-style: italic;
-            font-weight: 900;
-            src: local('Neue Haas Grotesk Display Pro'), url(https://fonts.cdnfonts.com/s/47998/NeueHaasDisplayBlackItalic.woff) format('woff')
-        }
-              </style>
-        <title>Geneplore AI</title>
+        </script>
     </head>
-    <body oncontextmenu="return false">
+    <body>
         <header>
             <nav class="navbar">
                 <a href="index.html" class="logo">
@@ -301,7 +137,11 @@
                             href="https://discord.com/oauth2/authorize?client_id=1089317211652509811"
                             class="cta-button">Add our bot</a>
                     </div>
-                
+                    <div class="hero-image animate-on-scroll fade-in-right">
+                        <img src="img/geneplore gift icon.png"
+                            alt="Geneplore AI logo surrounded by supported AI model providers including OpenAI, Anthropic, and Mistral"
+                            width="640" height="640" fetchpriority="high">
+                    </div>
                 </div>
             </section>
 
