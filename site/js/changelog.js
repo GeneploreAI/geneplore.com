@@ -40,9 +40,9 @@ const changelogData = [
     {
         version: "v4.9",
         changes: [
-            "Add Flux v1.1",
+            "Added Flux v1.1",
             "Added Stable Diffusion 3.5",
-            "Fix some DM issues with custom personalities, lots of optimization upgrades",
+            "Fixed some DM issues with custom personalities, lots of optimization upgrades",
             "Added Deepseek v3 and R1, some of the most powerful publicly available AI models",
             "Added OpenAI o3-mini, one of the most powerful reasoning models available from OpenAI",
             "Upgraded Gemini 1.5 Flash to Gemini 2 Flash",
